@@ -1,0 +1,47 @@
+.card-haeder-nav{width: 100%; position:relative; height: 150px;border-radius: 20px 20px 0 0; background-color: red; background-image: linear-gradient(to right top, #d8252e, #5c050d, #720e15, #d8252e, #bd0f11, #5f0002, #bd0f11, #d8252e, #83171e, #6b0f17, #530810, #d8252e);}
+.card{
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    max-width: 200px;
+    border: 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    -moz-box-shadow:    3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+    box-shadow:         3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+.card:hover{    -moz-box-shadow:    3px 3px 5px 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.5);
+    box-shadow:         3px 3px 5px 6px rgba(0, 0, 0, 0.5);}
+.card-haeder-nav .imgGif{
+    position: absolute;
+    top: -20%;
+    left: 50%!important;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 100%!important;
+    height: 120%!important;}
+.inicialization-card{padding: 15px; width: 100%;}
+.link-quiz{text-align: -webkit-center;}
+.card-body{    text-align: center; text-align: -webkit-center;}
+.width{width: 100%; display: inline-flex;}
+.col-pers-1{width: 50%; font-size: 18px; padding: 10px; background-color: #075300; color: #fff; font-size: 14px!important; border-radius: 0 0 0 20px;}
+.col-pers-2{width: 50%; font-size: 18px; padding: 10px; background-color: #075300; color: #fff; font-size: 14px!important; border-left: 1px solid #000; border-radius: 0 0 20px 0;}
+.card-body a{width: 100%;
+    display: block;
+    padding: 6px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    width: 70%;
+    text-decoration: none;
+    height: 35px;
+}
+.card-body .easy{background-color: #075300; color: #fff;}
+.card-body .medium{background-color: #9c8000; color: #fff;}
+.card-body .hard{background-color: #c20000; color: #fff;}
+.card-body{padding: 0; padding-top: 20px; width: 100%;}
+.col{width: 50%; padding: 0; margin: 0;}

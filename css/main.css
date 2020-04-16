@@ -1,0 +1,85 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif!important;
+}
+@media only screen and (min-width: 960px) {
+    h3{font-size: 28px!important;
+}
+}
+h3{letter-spacing: 3px;
+    width: auto!important;
+    font-family: "Montserrat", sans-serif!important;
+    font-size: 24px;
+    font-weight: bold!important;
+    color: #313131;
+    text-transform: uppercase;}
+h5{font-family: "Quicksand", sans-serif!important; font-size: 18px; font-weight: bold; color: #313131; }
+html, body{ padding:0;margin:0; background-color: #f1f1f1; color: rgb(37, 37, 37); overflow-x: hidden;}
+@media only screen and (max-width: 960px) {body{background-color: #fff!important;} .backPadding{padding-left:1px!important;padding-right: 0!important;}}
+::-webkit-scrollbar {     
+    width: 8px;
+}  
+::-webkit-scrollbar-track {     
+    background-color: #3d3d3db5;
+}  ::-webkit-scrollbar-thumb {     
+    background: rgb(44, 43, 42);     
+}  
+::-webkit-scrollbar-thumb:hover {     
+    background: rgb(44, 43, 42); 
+}
+
+input[type=radio] {
+    padding-left:5px;
+    padding-right:5px;
+    border-radius:15px;
+
+    -webkit-appearance:button;
+
+    border: double 2px #00F;
+
+    background-color:#0b0095;
+    color:#FFF;
+    white-space: nowrap;
+    overflow:hidden;
+
+    width:15px;
+    height:15px;
+}
+
+input[type=radio]:checked {
+    background-color:#000;
+    border-left-color:#06F;
+    border-right-color:#06F;
+}
+
+input[type=radio]:hover {
+    box-shadow:0px 0px 10px #1300ff;
+}
+
+.btn{width: 100%; border-radius: 0; height: 50px; padding: 10px;}
+.btn-first{
+    background-color: #c00000;
+    color: #fff;
+    border: 2px solid #ffffff00;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.btn-first:hover{
+    background-color: #fff;
+    color: #c00000;
+    border: 2px solid #c00000;
+}
+
+.btn-secound{
+    background-color: #cacaca;
+    border: 2px solid #cacaca;
+    color: #000;
+    border-radius: 50px;
+}
+
+.btn-secound:hover{
+    background-color: #fff;
+    border: 2px solid #cacaca;
+    color: #000;
+}
