@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="assents/css/home.css">
 
+<div class="col-md-12 col-lg-9 backPadding">
 <div class="inicialization-card backPadding" style="height: 2000px; background-color: #fff;">
 <div class="container-fluid backPadding">
 <div class="title" style="text-allign:center; width:100%;">
@@ -73,3 +74,4 @@
 </div>
 </div>
 </div>
+</div>  

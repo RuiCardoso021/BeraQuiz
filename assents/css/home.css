@@ -27,6 +27,7 @@
     height: 120%!important;}
 .inicialization-card{padding: 15px; width: 100%;}
 .link-quiz{text-align: -webkit-center;}
+@media only screen and (max-width: 350px) {.link-quiz{-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}}
 .card-body{    text-align: center; text-align: -webkit-center;}
 .width{width: 100%; display: inline-flex;}
 .col-pers-1{width: 50%; font-size: 18px; padding: 10px; background-color: #075300; color: #fff; font-size: 14px!important; border-radius: 0 0 0 20px;}
