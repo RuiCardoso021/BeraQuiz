@@ -10,8 +10,9 @@
 <div class="row">
 <?php $data = $conn->query("SELECT quiz_category, quiz_difficulty, quiz_questions_number FROM rxz_quiz  LIMIT 5")->fetchAll();?>
 
-    
+    <?php $i = 400 ?>
     <?php foreach ($data as $row) { ?>
+    <?php $i++; ?>
         <div class="col-xl-3 col-sm-4 col-6 link-quiz movie-quiz">
             <div class="card">
                 <div class="card-haeder-nav">
@@ -96,12 +97,27 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row['quiz_category']; ?> Quiz</h5>
                     <div class="ajust-btn">
-                        <a class="btn-secound" href="#">RANK</a>
+                        <a class="btn-secound"  data-toggle="modal" data-target=".modal<?php echo $i; ?>">RANK</a>
                         <a class="btn-first" href="#">PLAY</a>
                     </div>
                     <div class="width">
-                        <div class="col-pers-1 <?php echo "".$row['quiz_difficulty']; ?>" ><?php echo $row['quiz_questions_number']." / ".$row['quiz_questions_number']; ?></div>
-                        <div class="col-pers-2 <?php echo "".$row['quiz_difficulty']; ?>"> <?php echo "".$row['quiz_difficulty']; ?> </div>
+                        <div class="col-pers-1 <?php echo $row['quiz_difficulty']; ?>" ><?php echo $row['quiz_questions_number']." / ".$row['quiz_questions_number']; ?></div>
+                        <div class="col-pers-2 <?php echo $row['quiz_difficulty']; ?>"> <?php echo "".$row['quiz_difficulty']; ?> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade bd-example-modal-lg modal<?php echo $i; ?>" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                <img src="img/title_top15.png" class="img-fluid" alt="Responsive image">
+                    <div class="modal-content">
+                    <div class="container" style="position:relative; width:140px;">
+                      <a class="nav-link a-logo" href="index.php">
+                          <img class="img img_name_app" src="img/name_app.PNG" alt="Bera Quiz">
+                      </a>
+                    </div>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <?php echo $row['quiz_category']; ?>
                     </div>
                 </div>
             </div>
