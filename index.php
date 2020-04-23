@@ -21,11 +21,13 @@
     <div class="container-fluid" style="margin-top:80px; max-width:1400px;">
         <div class="row">
 
+                <!--MAIN-MENMU-->
+                <?php   include "assents/main-menu.php";    ?>
+
                 <!--HOME PAGE-->
                 <?php   include "assents/home.php";    ?>
 
-                <!--MAIN-MENMU-->
-                <?php   include "assents/main-menu.php";    ?>
+               
 
             
         </div>

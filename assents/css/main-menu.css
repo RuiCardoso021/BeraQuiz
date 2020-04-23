@@ -1,1 +1,5 @@
-.main-menu-title{margin-top: 30px;}
+.main-menu-title{margin-top: 20px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; width: 100%; font-weight: 500;}
+.main-menu{padding: 5px; cursor: pointer ;}
+.icon-main{    top: 30px;
+    right: 15px; position: absolute; }
+.desable{display: none!important;}

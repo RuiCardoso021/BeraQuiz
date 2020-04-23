@@ -1,3 +1,5 @@
+
+
 .mobile-footer {display: none;}
 
 #menu-top{background: rgba(0, 0, 0, 0.3); height: 56px; position: fixed; width: 100%; top: 0; z-index: 999;}
@@ -42,6 +44,8 @@
     .img-logo{
         width: 115px;
         height: 100px;
+        -webkit-transition: .3s all;
+        -o-transition: .3s all;
         transition: .3s all;
         position: absolute;
         left: 50%!important;
@@ -81,16 +85,31 @@
     }
     .mobile-footer>li>a {
         height: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .mobile-footer>li>a>span {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .mobile-footer>li>a>span>.svg {
         display: block;
@@ -125,6 +144,8 @@
     .img-logo{
         width: 115px;
         height: 100px;
+        -webkit-transition: .3s all;
+        -o-transition: .3s all;
         transition: .3s all;
         position: absolute;
         top: -16.5px;
@@ -169,6 +190,8 @@
       .format-menu .img-logo {
         width: 65px;
         height: 58px;
+        -webkit-transition: .3s all;
+        -o-transition: .3s all;
         transition: .3s all;
         position: absolute;
         top: -21.5px;
@@ -190,16 +213,16 @@
         margin-right: 10px;
         content: '[';
         -webkit-transform: translateX(10px);
-        -moz-transform: translateX(10px);
-        transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px);
     }
 
     .navbar-nav a::after {
         margin-left: 10px;
         content: ']';
         -webkit-transform: translateX(-10px);
-        -moz-transform: translateX(-10px);
-        transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+            transform: translateX(-10px);
     }
 
     .navbar-nav a::before, .navbar-nav a::after {
@@ -207,8 +230,11 @@
         display: inline-block;
         opacity: 0;
         -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-        -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+        -webkit-transition: opacity 0.2s, -webkit-transform 0.3s;
+        transition: opacity 0.2s, -webkit-transform 0.3s;
+        -o-transition: transform 0.3s, opacity 0.2s;
         transition: transform 0.3s, opacity 0.2s;
+        transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
     }
 
     .active-nav a::before {
@@ -217,8 +243,8 @@
         color: #c00000;
         font-weight: bold;
         -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
-        transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
     }
 
     .active-nav a::after {
@@ -227,8 +253,8 @@
         color: #c00000;
         font-weight: bold;
         -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
-        transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
     }
 
     .navbar-nav a:hover, .navbar-nav a:hover::before, .navbar-nav a:hover::after, .navbar-nav a:focus::before, .navbar-nav a:focus::after {
@@ -237,12 +263,11 @@
         background-color: transparent !important;	
         opacity: 1;
         -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
-        transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
     }
 
     .active-nav a{color: #c00000!important; font-weight: bold;}
 
 }
-
 
