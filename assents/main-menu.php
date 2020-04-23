@@ -10,7 +10,7 @@
             <!--TYPE QUIZ-->
             <div class="main-header-title">
                 <div class="main-menu">
-                    <h5 class="main-menu-title">Quiz Type</h5>
+                    <h5 class="main-menu-title" id="firstMenu">Quiz Type</h5>
                     <svg class="bi bi-chevron-right icon-main" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z" clip-rule="evenodd"/>
                     </svg>
@@ -19,8 +19,8 @@
                     </svg>
                 </div>
             </div>
-            <form class="form-main desable" action="/action_page.php" style="border-bottom:1px solid #0000001c; padding-bottom:30px">
-                <div class="container-fluid">
+            <form class="form-main" action="/action_page.php" style="border-bottom:1px solid #0000001c; padding-bottom:30px">
+                <div class="container-fluid" id="first">
                     <div class="row">
                         <div class="col-12">
                             <div class="pretty p-default">
@@ -213,7 +213,7 @@
         <div class="col-12" style="position:relative">
             <!--DIFFICULTY-->
             <div class="main-header-title">
-                <div class="main-menu">
+                <div class="main-menu" id="secondMenu">
                     <h5 class="main-menu-title">Quiz Dificulty</h5>
                     <svg class="bi bi-chevron-right icon-main" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z" clip-rule="evenodd"/>
@@ -224,8 +224,8 @@
                 </div>
             </div>
 
-            <form class="form-main desable" action="/action_page.php desable">
-                <div class="container-fluid">
+            <form class="form-main" action="/action_page.php">
+                <div class="container-fluid" id="second">
                     <div class="row">
                         <div class="col-12">
                             <div class="pretty p-default">
