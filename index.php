@@ -1,3 +1,18 @@
+<?php
+
+    session_start();
+
+    if(empty($_SESSION["user"]))
+    {
+        session_unset();
+        session_destroy();
+    }else{
+        echo $_SESSION["user"];
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

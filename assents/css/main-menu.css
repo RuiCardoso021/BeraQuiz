@@ -1,5 +1,14 @@
-.main-menu-title{margin-top: 20px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; width: 100%; font-weight: 500;}
+.main-menu-title{margin-top: 8px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; width: 100%; font-weight: 500; font-size: 16px;}
 .main-menu{padding: 5px; cursor: pointer ;}
-.icon-main{    top: 30px;
-    right: 15px; position: absolute; }
-.desable{display: none!important;}
+.icon-main{        top: 10px;
+    right: 15px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 22px;}
+.desable{display: none;}
+.line{border-bottom:1px solid #0000001c;
+padding: 4px 0;}
+.hidden-menu{display: none;}
+.fa-plus::before{content: "+"; }
+.fa-minus::before{content: "-"; }
+.form-main{padding-bottom: 20px;}

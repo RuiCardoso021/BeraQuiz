@@ -1,12 +1,13 @@
 $(document).ready(function(){
   $("#firstMenu").click(function(){
-    $("#first").toggle();
+    $(".first").toggle(300);
+
   });
 });
 
 $(document).ready(function(){
   $("#secondMenu").click(function(){
-    $("#second").toggle();
+    $(".second").toggle(300);
   });
 });
 

@@ -3,24 +3,20 @@
   <script src="assents/js/main-menu.js" async defer></script>   
 
    <div class="col-md-12 col-lg-3">
-        <div class="container-fluid main-menu-mother" style="height: 100%; background-color: #fff;">
+        <div class="container-fluid main-menu-mother" style="height: 100%; background-color: #fff; padding-top:30px;">
         <div class="row">
         <div class="col-12" style="position:relative;">
-            
+        <div class="line">   
             <!--TYPE QUIZ-->
             <div class="main-header-title">
-                <div class="main-menu">
-                    <h5 class="main-menu-title" id="firstMenu">Quiz Type</h5>
-                    <svg class="bi bi-chevron-right icon-main" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z" clip-rule="evenodd"/>
-                    </svg>
-                    <svg class="bi bi-chevron-down icon-main desable" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z" clip-rule="evenodd"/>
-                    </svg>
+                <div class="main-menu" id="firstMenu">
+                    <h5 class="main-menu-title" >Quiz Type</h5>
+                    <i class="first icon-main fa-plus "></i>
+                    <i class="first icon-main fa-minus desable"></i>
                 </div>
             </div>
-            <form class="form-main" action="/action_page.php" style="border-bottom:1px solid #0000001c; padding-bottom:30px">
-                <div class="container-fluid" id="first">
+            <form class="form-main hidden-menu first" action="/action_page.php" >
+                <div class="container-fluid" >
                     <div class="row">
                         <div class="col-12">
                             <div class="pretty p-default">
@@ -210,22 +206,20 @@
                 </div>
             </form>
         </div>
+        </div>
         <div class="col-12" style="position:relative">
+        <div class="line"> 
             <!--DIFFICULTY-->
             <div class="main-header-title">
                 <div class="main-menu" id="secondMenu">
                     <h5 class="main-menu-title">Quiz Dificulty</h5>
-                    <svg class="bi bi-chevron-right icon-main" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z" clip-rule="evenodd"/>
-                    </svg>
-                    <svg class="bi bi-chevron-down icon-main desable" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z" clip-rule="evenodd"/>
-                    </svg>
+                    <i class="second icon-main fa-plus "></i>
+                    <i class="second icon-main fa-minus desable"></i>
                 </div>
             </div>
 
-            <form class="form-main" action="/action_page.php">
-                <div class="container-fluid" id="second">
+            <form class="form-main hidden-menu second" action="/action_page.php">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
                             <div class="pretty p-default">
@@ -254,6 +248,7 @@
                     </div>
                 </div>
             </form>
+        </div>
         </div>
         </div>
         </div>

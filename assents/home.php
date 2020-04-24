@@ -119,16 +119,18 @@
             </div>
 
             <div class="modal fade bd-example-modal-lg modal<?php echo $row['id']; ?>" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <a type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </a>
                 <div class="modal-dialog modal-lg">
-                <img src="img/title_top15.png" class="img-fluid" alt="Responsive image">
                     <div class="modal-content">
-                    <div class="container" style="position:relative; width:140px;">
-                      <a class="nav-link a-logo" href="index.php">
-                          <img class="img img_name_app" src="img/name_app.PNG" alt="Bera Quiz">
-                      </a>
-                    </div>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                        <?php echo $row['category']; ?>
+                        <img src="img/img_top15.png" class="top15" alt="Responsive image">
+                        <div class="container" style="position:relative; width:100%;">
+                            <img class="img img_name_app" src="img/name_app.PNG" alt="Bera Quiz">
+                            <h4 class="category_modal"><?php echo $row['category']; ?></h4>
+                        </div>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
                     </div>
                 </div>
             </div>

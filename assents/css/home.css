@@ -67,6 +67,9 @@
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);}
 
-.modal{background: #000000d6;}
-.modal-content{border-radius:0!important;}
-.img_name_app{width: 100%; height: auto; position: absolute; top:0; left:0;}
+.modal{background-color:#f8f9fae8;}
+.modal-content{border-radius:0!important; padding: 15px 50px;}
+.img_name_app{width: 50%; max-width: 150px; height: auto; position:absolute; top: 0; left: 0;}
+.category_modal{float: right; background-color: rgb(192, 0, 0); color: #fff; padding: 8px 12px; font-weight: bold; font-size: 18px;}
+.close-modal{position: absolute; top: 15px; right: 15px; font-size: 30px; z-index: 99999; height: 40px; width: 40px;}
+.top15{max-width: 400px; text-align:center; width: 100%;}
