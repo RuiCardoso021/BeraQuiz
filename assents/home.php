@@ -1,3 +1,11 @@
+
+<?php
+    include "models/model_quiz.php";
+    $quiz = new Quiz();
+    $list = $quiz->getEverthingData();
+?>
+
+
 <link rel="stylesheet" href="assents/css/home.css">
 
 <div class="col-md-12 col-lg-9 backPadding">
@@ -6,18 +14,21 @@
 <div class="title" style="text-allign:center; width:100%;">
 
     <h3 style="padding: 20px 15px; text-align:center;">Choice Your Favorite Quiz And Upgrade Your Rank</h3>
+
 </div>
 <div class="row">
-<?php $data = $conn->query("SELECT quiz_category, quiz_difficulty, quiz_questions_number FROM rxz_quiz  LIMIT 5")->fetchAll();?>
-
-    <?php $i = 400 ?>
-    <?php foreach ($data as $row) { ?>
-    <?php $i++; ?>
+    <?php $count = 0; ?>
+    <?php foreach ($list as $row) { ?>
+        <?php 
+        $count++;
+        $id_quiz = $row["id"];
+        ?>
+        <?php if ($count <= 12){ ?>
         <div class="col-xl-3 col-sm-4 col-6 link-quiz movie-quiz">
             <div class="card">
                 <div class="card-haeder-nav">
                 <?php
-                    switch ($row['quiz_category']) {
+                    switch ($row['category']) {
                         case "Films":
                             echo '<lottie-player class="imgGif" src="https://assets3.lottiefiles.com/packages/lf20_SQNCQN.json"  background="transparent"  speed="0.7"  style="width: 100%; height: auto;" loop  autoplay></lottie-player>';
                             break;
@@ -95,19 +106,19 @@
                 ?>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title"><?php echo $row['quiz_category']; ?> Quiz</h5>
+                    <h5 class="card-title"><?php echo $row['category']; ?> Quiz</h5>
                     <div class="ajust-btn">
-                        <a class="btn-secound"  data-toggle="modal" data-target=".modal<?php echo $i; ?>">RANK</a>
-                        <a class="btn-first" href="#">PLAY</a>
+                        <a class="btn-secound"  data-toggle="modal" data-target=".modal<?php echo $id_quiz; ?>">RANK</a>
+                        <a class="btn-first" href="assents/quiz_game.php/<?php echo "id=".$id_quiz;?>">PLAY</a>
                     </div>
                     <div class="width">
-                        <div class="col-pers-1 <?php echo $row['quiz_difficulty']; ?>" ><?php echo $row['quiz_questions_number']." / ".$row['quiz_questions_number']; ?></div>
-                        <div class="col-pers-2 <?php echo $row['quiz_difficulty']; ?>"> <?php echo "".$row['quiz_difficulty']; ?> </div>
+                        <div class="col-pers-1 <?php echo $row['difficulty']; ?>" ><?php echo $row['questions']." / ".$row['questions']; ?></div>
+                        <div class="col-pers-2 <?php echo $row['difficulty']; ?>"> <?php echo "".$row['difficulty']; ?> </div>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade bd-example-modal-lg modal<?php echo $i; ?>" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg modal<?php echo $row['id']; ?>" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                 <img src="img/title_top15.png" class="img-fluid" alt="Responsive image">
                     <div class="modal-content">
@@ -117,12 +128,12 @@
                       </a>
                     </div>
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                        <?php echo $row['quiz_category']; ?>
+                        <?php echo $row['category']; ?>
                     </div>
                 </div>
             </div>
         </div>
-    <?php } ?>
+    <?php }} ?>
     
 </div>
 </div>

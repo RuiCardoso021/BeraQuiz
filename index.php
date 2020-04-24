@@ -10,8 +10,6 @@
     <title>QuizChoose</title>
 </head>
 <body>
-    <?php   include "models/conn.php";    //connect database?>
-
     <!--HEADER-->
     <?php   include "assents/menu.php";   ?>
 
