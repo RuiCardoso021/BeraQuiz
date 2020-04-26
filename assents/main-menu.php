@@ -15,7 +15,7 @@
                     <i class="first icon-main fa-minus desable"></i>
                 </div>
             </div>
-            <form class="form-main hidden-menu first" action="/action_page.php" >
+            <form class="form-main hidden-menu first">
                 <div class="container-fluid" >
                     <div class="row">
                         <div class="col-12">

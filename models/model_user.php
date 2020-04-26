@@ -11,13 +11,12 @@ class User{
     }
     
     public function Autentication($email, $pass){
-        $stmt = $this->conn->prepare("SELECT user_name, user_pass FROM rxz_users WHERE user_name = :user_name AND user_pass = :user_pass");
-        $stmt->bindParam(':user_name', $email);
-        $stmt->bindParam(':user_pass', $pass);
+        $stmt = $this->conn->prepare("SELECT user_email, user_pass FROM rxz_users WHERE user_email = :user_email");
+        $stmt->bindParam(':user_email', $email);
         $stmt->execute();
         $utilizador = $stmt->fetch();
 
-        if ($utilizador && password_verify($_POST['pass'], $utilizador['pass'])){
+        if ($utilizador && password_verify($pass, $utilizador['user_pass'])){
             return true;
         }else{
             return false;

@@ -4,7 +4,7 @@
     $user = new User();
 
     $email  = $_POST['r_email'];
-    $pass   = $_POST['r_pass'];//password_hash($_POST['r_pass'], PASSWORD_DEFAULT);
+    $pass   = password_hash($_POST['r_pass'], PASSWORD_DEFAULT);
     $name   = $_POST['r_name'];
 
     //verifica se esta tudo preenchido!

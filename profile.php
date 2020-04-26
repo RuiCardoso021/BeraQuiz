@@ -60,8 +60,15 @@
       </label>
       <label>
         <span>Password</span>
-        <input type="password" name="r_pass" id="r_pass"/>
+        <input type="password" name="r_pass" id="r_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
       </label>
+      <div id="message">
+        <h3 style="font-size: 12px;">Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
       <button type="button" class="submit btn-first" id="btn_register">Register</button>
 
       <p class="menssage-error-register">This email already exists!</p>      

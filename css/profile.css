@@ -302,4 +302,39 @@ input {
       animation-iteration-count: 3;
       }
 
-    
+    /* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    position: absolute;
+    font-family: "Montserrat", sans-serif!important;
+    right: 157px;
+    border-radius: 50px;
+    padding: 8px 33px 0px 65px;
+    background: #F8F9FA;
+    color: #ADB5BD;
+    box-shadow: 1px 2px;
+    bottom: 20px;
+  }
+  
+  #message p {
+    padding: 0px 35px;
+    font-size: 12px;
+    margin-bottom: 1px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: rgb(135, 141, 146);
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔"!important;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
