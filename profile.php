@@ -28,7 +28,7 @@
     <div class="forgot-pass">
         <p class="forgot">Forgot password?</p>
     </div>
-    <button type="button" class="submit btn-first" id="btn_login"  value="envia" name="accao">Login</button>
+    <button type="button" class="submit btn-first" id="btn_login" >Login</button>
     <button type="button" class="fb-btn btn-tres">connect width <strong>facebook</strong></button>
 
     <p class="menssage-error">Your email our password are incorrect!</p>
@@ -62,7 +62,7 @@
         <span>Password</span>
         <input type="password" name="r_pass" id="r_pass"/>
       </label>
-      <button type="button" class="submit btn-first" id="btn_register" value="submit" name="register">Register</button>
+      <button type="button" class="submit btn-first" id="btn_register">Register</button>
 
       <p class="menssage-error-register">This email already exists!</p>      
     </div>

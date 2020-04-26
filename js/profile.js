@@ -40,9 +40,9 @@ $(document).ready(function(){
         r_name:  $("#r_name").val(),
         r_pass:  $("#r_pass").val()
       },
-      function(data,status){
+      function(data_register,status){
       
-          if(data == 1)
+          if(data_register == 1)
           {
               document.location.href = "perfil.php";   
           }else{

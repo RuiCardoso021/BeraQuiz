@@ -26,7 +26,7 @@ class User{
 
     public function Register($email, $pass, $name){
         try {
-            $stmt = $this->conn->prepare("INSERT INTO rxz_users (user_email, user_pass, user_name) VALUES ('$id','$email','$pass','$name')");
+            $stmt = $this->conn->prepare("INSERT INTO rxz_users (user_email, user_pass, user_name) VALUES ('$email','$pass','$name')");
             $stmt->execute();
             return true;
         }   
@@ -39,11 +39,11 @@ class User{
         $stmt = $this->conn->prepare("SELECT user_name FROM rxz_users WHERE user_name = :user_name");
         $stmt->bindParam(':user_name', $name);
         $stmt->execute();
-        $obj = $stmt->fetchObject();
+        $obj = $stmt->fetch();
         if($obj){
-            return false;
-        }else{
             return true;
+        }else{
+            return false;
         }
     }
 }
