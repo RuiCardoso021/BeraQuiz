@@ -56,6 +56,8 @@ $(document).ready(function(){
       });
     });
   });
+
+  
 var myInput = document.getElementById("r_pass");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");

@@ -47,7 +47,7 @@ class Quiz{
         }
         $stmt = null;
         $this->conn = null;
-        return $data; }
+        return $list; }
 
 }
 
