@@ -11,7 +11,7 @@
 <div class="col-md-12 col-lg-9 backPadding">
 <div class="inicialization-card backPadding" style="height: 2000px; background-color: #fff;">
 <div class="container-fluid backPadding">
-<div class="title" style="text-allign:center; width:100%;">
+<div class="title" style="text-align:center; width:100%;">
 
     <h3 style="padding: 20px 15px; text-align:center;">Choice Your Favorite Quiz And Upgrade Your Rank</h3>
 
@@ -109,7 +109,7 @@
                     <h5 class="card-title"><?php echo $row['category']; ?> Quiz</h5>
                     <div class="ajust-btn">
                         <a class="btn-secound"  data-toggle="modal" data-target=".modal<?php echo $id_quiz; ?>">RANK</a>
-                        <a class="btn-first" href="assents/quiz_game.php/<?php echo "id=".$id_quiz;?>">PLAY</a>
+                        <a class="btn-first" href="assents/quiz_game.php?<?php echo "id=".$id_quiz;?>">PLAY</a>
                     </div>
                     <div class="width">
                         <div class="col-pers-1 <?php echo $row['difficulty']; ?>" ><?php echo $row['questions']." / ".$row['questions']; ?></div>

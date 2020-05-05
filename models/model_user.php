@@ -6,7 +6,7 @@ class User{
     private $conn=null;
 	  
     function __construct() {
-        $db=new basedados();
+        $db=new BaseDados();
 		$this->conn = $db->connection();
     }
     

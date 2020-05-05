@@ -1,0 +1,28 @@
+body, html {
+    height: 100%;
+  }
+  
+  body {
+    background-image: url(../../img/wallpaper_play_game.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;;
+  }
+  
+  body, 
+  .caja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .caja {
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 100px;
+    height: 200px;
+    width: 200px;  
+  }
