@@ -1,17 +1,27 @@
-let caja = document.querySelector('.caja');
-let temporizador = {
-  cuenta: 6
-};
 
-let actualizar = function() {
-  caja.innerHTML = parseInt(temporizador.cuenta, 6);
-};
 
-let tween = TweenLite.to(
-  temporizador,
-  6, 
-  {
-    cuenta: 0, 
-    onUpdate: actualizar
-  }
-);
+$(document).ready(function () {
+
+    countByStart();
+
+});
+
+
+
+function countByStart(){
+    //CREATE TIMER TO BEGIN GAME
+
+    var temoriza=5;
+    let timerId = setInterval(() => {
+        $(".caja").text(temoriza); 
+        temoriza--; 
+        }, 1000);
+
+    // after 5 seconds stop and start quiz
+    setTimeout(() => {
+        clearInterval(timerId);
+        $(".caja").hide(300);
+        showQuiz(); 
+    }, 6500);
+
+}
