@@ -1,6 +1,6 @@
 <?php 
 
-include "../models/model_quiz.php";
+include "models/model_quiz.php";
 
 $user = new Quiz();
 
@@ -9,7 +9,7 @@ $user = new Quiz();
 //verifica se esta tudo preenchido!
 if(empty($_GET["id"])){
     
-    include "../error.php"; 
+    include "error.php"; 
 
 }else{
     //verifica se exite dados iguais na base dados
@@ -17,7 +17,7 @@ if(empty($_GET["id"])){
     
     if (empty($list)){
 
-        include "../error.php";
+        include "error.php";
 
     }else{
         foreach ($list as $row) { 
@@ -32,7 +32,7 @@ if(empty($_GET["id"])){
                 </script>";
         }
 
-        include "play_game.php";
+        include "assents/play_game.php";
     }
     
 }

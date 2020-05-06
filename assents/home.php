@@ -3,13 +3,15 @@
     include "models/model_quiz.php";
     $quiz = new Quiz();
     $list = $quiz->getEverthingData();
+
 ?>
 
 
 <link rel="stylesheet" href="assents/css/home.css">
+<script src="assents/js/home.js" async defer></script> 
 
 <div class="col-md-12 col-lg-9 backPadding">
-<div class="inicialization-card backPadding" style="height: 2000px; background-color: #fff;">
+<div class="inicialization-card backPadding" style="height: 1400px; background-color: #fff; margin-bottom: 100px;">
 <div class="container-fluid backPadding">
 <div class="title" style="text-align:center; width:100%;">
 
@@ -108,8 +110,8 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row['category']; ?> Quiz</h5>
                     <div class="ajust-btn">
-                        <a class="btn-secound"  data-toggle="modal" data-target=".modal<?php echo $id_quiz; ?>">RANK</a>
-                        <a class="btn-first" href="assents/quiz_game.php?<?php echo "id=".$id_quiz;?>">PLAY</a>
+                        <a class="btn-secound" data-id="<?php echo $id_quiz; ?>" data-toggle="modal" data-target=".modal<?php echo $id_quiz; ?>">RANK</a>
+                        <a class="btn-first" href="quiz_game.php?<?php echo "id=".$id_quiz;?>">PLAY</a>
                     </div>
                     <div class="width">
                         <div class="col-pers-1 <?php echo $row['difficulty']; ?>" ><?php echo $row['questions']." / ".$row['questions']; ?></div>
@@ -118,7 +120,7 @@
                 </div>
             </div>
 
-            <div class="modal fade bd-example-modal-lg modal<?php echo $row['id']; ?>" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade bd-example-modal-lg modal<?php echo $id_quiz; ?>" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <a type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </a>

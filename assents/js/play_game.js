@@ -21,7 +21,9 @@ function countByStart(){
     setTimeout(() => {
         clearInterval(timerId);
         $(".caja").hide(300);
+        alert(url);
         showQuiz(); 
     }, 6500);
 
 }
+
