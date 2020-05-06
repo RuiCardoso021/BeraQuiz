@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/error.css">
+<link rel="stylesheet" href="css/error.css">
 
 <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Anton|Passion+One|PT+Sans+Caption' rel='stylesheet' type='text/css'>
@@ -21,4 +21,4 @@
         <!-- Error Page -->
 </body>
 
-<script src="../js/error.js" async defer></script>
+<script src="js/error.js" async defer></script>

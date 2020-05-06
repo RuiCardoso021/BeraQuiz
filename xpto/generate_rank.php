@@ -10,7 +10,8 @@ $id = $_POST['ID'];
 
     $rankList = $rank->CheckRank($id);
 
-    var_dump($rankList);
+    echo json_encode($rankList);
+
     
 }else{
     echo '<script>alert("eerroorr");</script>';

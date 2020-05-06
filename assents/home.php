@@ -110,7 +110,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row['category']; ?> Quiz</h5>
                     <div class="ajust-btn">
-                        <a class="btn-secound" data-id="<?php echo $id_quiz; ?>" data-toggle="modal" data-target=".modal<?php echo $id_quiz; ?>">RANK</a>
+                        <a class="btn-secound" data-id="<?php echo $id_quiz; ?>" data-toggle="modal" data-target=".modal">RANK</a>
                         <a class="btn-first" href="quiz_game.php?<?php echo "id=".$id_quiz;?>">PLAY</a>
                     </div>
                     <div class="width">
@@ -120,25 +120,30 @@
                 </div>
             </div>
 
-            <div class="modal fade bd-example-modal-lg modal<?php echo $id_quiz; ?>" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <a type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </a>
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <img src="img/img_top15.png" class="top15" alt="Responsive image">
-                        <div class="container" style="position:relative; width:100%;">
-                            <img class="img img_name_app" src="img/name_app.PNG" alt="Bera Quiz">
-                            <h4 class="category_modal"><?php echo $row['category']; ?></h4>
-                        </div>
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-                    </div>
-                </div>
-            </div>
+            
         </div>
     <?php }} ?>
     
+    <div class="modal fade bd-example-modal-lg modal" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <a type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </a>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <img src="img/img_top15.png" class="top15" alt="Responsive image">
+                <div class="container" style="position:relative; width:100%;">
+                    <img class="img img_name_app" src="img/name_app.PNG" alt="Bera Quiz">
+                    <h4 class="category_modal"><?php echo $row['category']; ?></h4>
+                </div>
+                <div id="my-modal-corpo">
+                    <p class="rank-3d"> 1º</p>
+                </div>
+
+                <br>
+            </div>
+        </div>
+    </div>
+
 </div>
 </div>
 </div>
