@@ -13,7 +13,6 @@ var limitQuestion = 10  ;
 
 var isStart = true ;
 
-const divGameGeral = document.getElementById('gameDiv')    ;
 const questionText = document.getElementById('question')   ;
 const trueBtt      = document.getElementById('trueBtt')    ;
 const falseBtt     = document.getElementById('falseBtt')   ;
@@ -39,21 +38,19 @@ class Question{
 //Count down 5 secs
 function countByStart(){
 
-    divGameGeral.style.display = "none";
-
-    var temoriza=5;
+    var temoriza=3;
     let timerId = setInterval(() => {
         $(".caja").text(temoriza); 
         temoriza--; 
-        }, 1000);
+        }, 850);
     setTimeout(() => {
         clearInterval(timerId);
-        $(".caja").hide(300);
+        $(".caja").hide(700);
         loadQuizz(url); 
 
-        divGameGeral.style.display = "block";
+        $("#gameDiv").show(1000);
 
-    }, 6500);
+    }, 4000);
 
 }
 
@@ -128,13 +125,13 @@ function checkCorrect(as){
 
             score++;
             
-            lastResult.textContent = "Correct";
+            lastResult.textContent = "Last Result: Correct";
 
             displayQuestion();
 
         }else if(as == currentIncorrect){
 
-            lastResult.textContent = "Incorrect";
+            lastResult.textContent = "Last Result: Incorrect";
 
             displayQuestion();
 
@@ -162,7 +159,7 @@ function fullTimer() {
 
         isStart = false;
 
-        document.getElementById("timerText").textContent = "Timer: " + timer;
+        document.getElementById("timerText").textContent = timer;
 
         timer--;
 

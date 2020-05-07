@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
     <link rel="stylesheet" href="css/main.css">
-    <title>QuizChoose</title>
+    <title>BeraQuiz</title>
 </head>
 <body>
     <!--HEADER-->
