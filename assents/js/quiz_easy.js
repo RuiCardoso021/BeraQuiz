@@ -121,7 +121,7 @@ function checkCorrect(as){
         
     } else {
 
-        lastResult.textContent = "No time/incorrect";
+        lastResult.textContent = "Last Result: No Time";
 
         displayQuestion();
 
@@ -132,6 +132,8 @@ function checkCorrect(as){
 //Timer
 function fullTimer() {
 
+    
+
     if(!isStart)
         globalTimer -= (10 - timer);
 
@@ -141,12 +143,15 @@ function fullTimer() {
 
         isStart = false;
 
+        $('.btn').prop('disabled', false);
+
         document.getElementById("timerText").textContent = timer;
 
         timer--;
 
         trueBtt.addEventListener('click', function(){
 
+            $('.btn').prop('disabled', true);
             clearInterval(timerGame);
             return;
 
@@ -154,6 +159,7 @@ function fullTimer() {
         
         falseBtt.addEventListener('click', function(){
 
+            $('.btn').prop('disabled', true);
             clearInterval(timerGame);
             return;
 

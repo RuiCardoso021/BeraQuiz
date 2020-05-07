@@ -13,7 +13,6 @@ $user = new Quiz();
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assents/css/quiz.css">
         <title>Bera Quiz - Quiz game</title>
-        
     </head>
     <body>
         <div class="caja">3</div>

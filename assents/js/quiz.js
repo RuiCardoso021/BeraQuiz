@@ -14,9 +14,10 @@ function countByStart(){
         clearInterval(timerId);
         $(".caja").hide(700);
         loadQuizz(url); 
-
+        $('.btn').prop('disabled', true);
         $("#gameDiv").show(1000);
 
     }, 4000);
 
 }
+

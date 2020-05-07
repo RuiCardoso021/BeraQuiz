@@ -9,12 +9,19 @@
         </div>
 
         <div class="question">
-            <p id="question">...</p>
+            <p id="question"></p>
         </div>
         
-        <div class="response">
+        <div class="response-bool type-response">
             <button class="btn" id="trueBtt" onclick='checkCorrect("True")'>True</button>
             <button class="btn" id="falseBtt" onclick='checkCorrect("False")'>False</button>
+        </div>
+
+        <div class="response-multiple type-response">
+            <button class="btn" id="response_1" ></button>
+            <button class="btn" id="response_2" ></button>
+            <button class="btn" id="response_3" ></button>
+            <button class="btn" id="response_4" ></button>
         </div>
         
         <div>

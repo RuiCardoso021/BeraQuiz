@@ -9,7 +9,7 @@
         </div>
 
         <div class="question">
-            <p id="question">...</p>
+            <p id="question"></p>
         </div>
         
         <div class="response">
