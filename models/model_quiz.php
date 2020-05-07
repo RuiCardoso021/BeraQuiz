@@ -33,12 +33,12 @@ class Quiz{
 
     //somente uma category
     public function getDataByCategory($id){
-        $list = [];
+        $dataByUrl = [];
         $stmt = $this->conn->prepare("SELECT quiz_category, quiz_difficulty, quiz_questions_number, quiz_type, quiz_category_number FROM rxz_quiz WHERE quiz_id = '$id'");
         $stmt->execute();
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         foreach($rows as $row) {
-            $list[] = array(
+            $dataByUrl[] = array(
                 "category"      => $row['quiz_category'], 
                 "difficulty"    => $row['quiz_difficulty'], 
                 "questions"     => $row['quiz_questions_number'], 
@@ -48,7 +48,7 @@ class Quiz{
         }
         $stmt = null;
         $this->conn = null;
-        return $list; }
+        return $dataByUrl; }
 
 
 

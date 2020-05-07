@@ -19,8 +19,7 @@ const falseBtt     = document.getElementById('falseBtt')   ;
 const timerText    = document.getElementById('timerText')  ;
 const lastResult   = document.getElementById('lastResult') ;
 
-//Start
-countByStart();
+
 
 //Class question
 class Question{
@@ -35,24 +34,7 @@ class Question{
 
 }
 
-//Count down 5 secs
-function countByStart(){
 
-    var temoriza=3;
-    let timerId = setInterval(() => {
-        $(".caja").text(temoriza); 
-        temoriza--; 
-        }, 850);
-    setTimeout(() => {
-        clearInterval(timerId);
-        $(".caja").hide(700);
-        loadQuizz(url); 
-
-        $("#gameDiv").show(1000);
-
-    }, 4000);
-
-}
 
 //Pick all quizz from web
 function loadQuizz(url){

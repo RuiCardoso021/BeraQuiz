@@ -25,7 +25,7 @@
         $count++;
         $id_quiz = $row["id"];
         ?>
-        <?php if ($count <= 12){ ?>
+        <?php if ($count <= 70){ ?>
         <div class="col-xl-3 col-sm-4 col-6 link-quiz movie-quiz">
             <div class="card">
                 <div class="card-haeder-nav">
