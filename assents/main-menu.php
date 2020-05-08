@@ -5,6 +5,9 @@
    <div class="col-md-12 col-lg-3 menu-lateral-mobile paddingdomenu">
         <div class="container-fluid main-menu-mother main-body" style="padding-top:30px;">
         <div class="row">
+        <a type="button" class="close-modal close-main-menu">
+            <span aria-hidden="true">×</span>
+        </a>
         <div class="col-12"><p class="text-center main-menu-title title-menu">MENU</p></div>
         <div class="col-12" style="position:relative;">
         <div class="line">   

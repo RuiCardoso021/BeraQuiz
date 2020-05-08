@@ -17,6 +17,7 @@ label{font-family: monospace!important;
 .title-menu{display: block;margin: 20px 0;
     font-weight: bold;}
 #form-main-menu .col-12{padding-bottom: 3px;}
+@media only screen and (min-width: 992px) {.menu-lateral-mobile{display: block!important;}}
 @media only screen and (max-width: 992px) {
     .menu-lateral-mobile{
         padding-bottom: 60px;

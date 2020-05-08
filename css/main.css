@@ -23,9 +23,12 @@ h5{font-size: 18px;
     color: #000;
     font-family: monospace;
     letter-spacing: 2px;}
+    .close-main-menu{display: none;}
 html, body{ padding:0;margin:0;color: rgb(37, 37, 37); overflow-x: hidden;}
-@media only screen and (max-width: 992px) {.body-index{margin-top: 0;} body{background-color: #fff!important;} .backPadding{padding-left:1px!important;padding-right: 1px!important;} 
+@media only screen and (max-width: 992px) {.body-index{margin-top: 0;} body{background-color: #fff!important;}
+ .backPadding{padding-left:1px!important;padding-right: 1px!important;} 
 h3{font-size: 20px;} h5{font-size: 16px;}
+.close-main-menu{display: block; top: 0!important; right: 0!important;}
 }
 ::-webkit-scrollbar {     
     width: 8px;

@@ -1,12 +1,18 @@
 
 $(document).ready(function(){
 
+  //toggle to main menu
   $("#toggle-main-menu").click(function(){
     $('.menu-lateral-mobile').toggle(100)(function() {
       $('.menu-lateral-mobile').animate({width: 'toggle'});
     });
   });
 
+  //close main menu from icon "x"
+  $(".close-main-menu").click(function(){
+    $('.menu-lateral-mobile').css("display","none");
+  });
+  
 
   $('.btn-secound').on('click',function(){ 
 
