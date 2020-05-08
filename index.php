@@ -31,7 +31,7 @@
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     
-    <div class="container-fluid" style="margin-top:80px; max-width:1400px; overflow-y:hidden;">
+    <div class="container-fluid body-index">
         <div class="row">
 
                 <!--MAIN-MENMU-->

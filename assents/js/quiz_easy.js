@@ -161,9 +161,9 @@ function fullTimer() {
 
         });
 
-    }, 1000);
+    }, 800);
 
-    setTimeout(() => { clearInterval(timerGame); }, 11000);
+    setTimeout(() => { clearInterval(timerGame); }, 8800);
 
 }
 

@@ -217,9 +217,9 @@ function fullTimer() {
 
         });
 
-    }, 1000);
+    }, 800);
 
-    setTimeout(() => { clearInterval(timerGame); }, 11000);
+    setTimeout(() => { clearInterval(timerGame); }, 8800);
 
 }
 
@@ -227,6 +227,6 @@ function fullTimer() {
 function endQuizz(){
 
     alert("You did " + score + " points!");
-    alert( 100 - globalTimer);
+    alert( 300 - globalTimer);
 
 }

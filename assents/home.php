@@ -10,14 +10,22 @@
 <link rel="stylesheet" href="assents/css/home.css">
 <script src="assents/js/home.js" async defer></script> 
 
-<div class="col-md-12 col-lg-9 backPadding" style="padding-bottom: 100px">
-<div class="inicialization-card backPadding" style="height: 100%; background-color: #fff; margin-bottom: 50px;">
-<div class="container-fluid backPadding">
-<div class="title" style="text-align:center; width:100%;">
-
-    <h3 style="padding: 20px 15px; text-align:center;">Choice Your Favorite Quiz And Upgrade Your Rank</h3>
-
+<div class="col-md-12 col-lg-9 backPadding ajust-mobile">
+<div class="inicialization-card backPadding main-body">
+<div class="container-fluid backPadding main-body-padding">
+<div class="title" style="text-align:center; width:100%; padding: 20px 15px;">
+    <div style="border-bottom: 1px solid #0000001c;">
+        <h3 style="padding:0; text-align:center;">Choice Your Favorite Quiz And Upgrade Your Rank</h3>
+    </div>
 </div>
+<div class="icon-main-menu">
+    <span id="toggle-main-menu">
+        <svg class="svg bi bi-list-ul" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm0-4a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm0-4a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm-3 1a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+        </svg>
+    </span>
+</div>
+
 <div class="row">
     <?php $count = 0; ?>
     <?php foreach ($list as $row) { ?>

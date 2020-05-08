@@ -2,20 +2,21 @@
   <link rel="stylesheet" href="assents/css/main-menu.css"> 
   <script src="assents/js/main-menu.js" async defer></script>   
 
-   <div class="col-md-12 col-lg-3" style="padding-bottom: 100px">
-        <div class="container-fluid main-menu-mother" style="height: 100%; background-color: #fff; padding-top:30px; margin-bottom: 50px;">
+   <div class="col-md-12 col-lg-3 menu-lateral-mobile paddingdomenu">
+        <div class="container-fluid main-menu-mother main-body" style="padding-top:30px;">
         <div class="row">
+        <div class="col-12"><p class="text-center main-menu-title title-menu">MENU</p></div>
         <div class="col-12" style="position:relative;">
         <div class="line">   
             <!--TYPE QUIZ-->
             <div class="main-header-title">
                 <div class="main-menu" id="firstMenu">
-                    <h5 class="main-menu-title" >Quiz Type</h5>
+                    <p class="main-menu-title" >Quiz Type</p>
                     <i class="first icon-main fa-plus "></i>
                     <i class="first icon-main fa-minus desable"></i>
                 </div>
             </div>
-            <form class="form-main hidden-menu first">
+            <form class="form-main hidden-menu first" id="form-main-menu">
                 <div class="container-fluid" >
                     <div class="row">
                         <div class="col-12">
@@ -212,13 +213,13 @@
             <!--DIFFICULTY-->
             <div class="main-header-title">
                 <div class="main-menu" id="secondMenu">
-                    <h5 class="main-menu-title">Quiz Dificulty</h5>
+                    <p class="main-menu-title">Quiz Dificulty</p>
                     <i class="second icon-main fa-plus "></i>
                     <i class="second icon-main fa-minus desable"></i>
                 </div>
             </div>
 
-            <form class="form-main hidden-menu second" action="/action_page.php">
+            <form class="form-main hidden-menu second" action="/action_page.php" id="form-main-menu">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">

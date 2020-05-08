@@ -1,5 +1,13 @@
 
 $(document).ready(function(){
+
+  $("#toggle-main-menu").click(function(){
+    $('.menu-lateral-mobile').toggle(100)(function() {
+      $('.menu-lateral-mobile').animate({width: 'toggle'});
+    });
+  });
+
+
   $('.btn-secound').on('click',function(){ 
 
     var id_task = $(this).attr('data-id');
@@ -60,3 +68,5 @@ $(document).ready(function(){
 
   });
 });
+
+
