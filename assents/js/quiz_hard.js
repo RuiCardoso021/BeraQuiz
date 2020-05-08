@@ -46,7 +46,7 @@ function loadQuizz(url){
 
             var tempArray = [];
 
-            for (var i = 0; i < 10; i++) {
+            for (var i = 0; i < 30; i++) {
 
                 let tempClass = new Question(res['results'][i]['question'],
                     res['results'][i]['correct_answer'],
@@ -149,7 +149,7 @@ function checkCorrect(as){
 
             displayQuestion();
 
-        }else if(as == currentIncorrect){
+        }else{
 
             lastResult.textContent = "Last Result: Incorrect";
 
