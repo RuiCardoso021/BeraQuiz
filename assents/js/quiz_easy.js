@@ -19,22 +19,18 @@ const falseBtt     = document.getElementById('falseBtt')   ;
 const timerText    = document.getElementById('timerText')  ;
 const lastResult   = document.getElementById('lastResult') ;
 
-
-
 //Class question
 class Question{
 
     constructor(question, correct_as, incorrect_as){
 
-        this.question     = decodeURI(question)        ;
-        this.correct_as   = decodeURI(correct_as)      ;
-        this.incorrect_as = decodeURI(incorrect_as[0]) ;
+        this.question     = decodeURIComponent(question)        ;
+        this.correct_as   = decodeURIComponent(correct_as)      ;
+        this.incorrect_as = decodeURIComponent(incorrect_as[0]) ;
 
     }
 
 }
-
-
 
 //Pick all quizz from web
 function loadQuizz(url){
