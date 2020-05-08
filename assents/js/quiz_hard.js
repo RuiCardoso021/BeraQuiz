@@ -1,40 +1,38 @@
-//Globals
+//Global
 var arrayQuestions  = [];
 
-var currentQuestion  ;
-var currentCorrect   ;
-var currentIncorrect ;
+var globalTimer = 300  ;
+var timer       = 0    ;
+var score       = 0    ;
+var limitQ      = 30   ;
+var isStart     = true ;
+var currentCorrect     ;
+var currentQuestion    ;
+var currentCorrectBtt  ;
 
-var score = 0 ;
-var timer = 0 ;
+//Elements
+const questionElement = document.getElementById('question')   ;
+const timerElementT   = document.getElementById('timerText')  ;
+const lastResult      = document.getElementById('lastResult') ;
 
-var globalTimer   = 100 ;
-var limitQuestion = 10  ;
+//Btts
+const bttOne   = document.getElementById('response_1') ;
+const bttTwo   = document.getElementById('response_2') ;
+const bttTree  = document.getElementById('response_3') ;
+const bttForth = document.getElementById('response_4') ;
 
-var isStart = true ;
-
-const questionText = document.getElementById('question')   ;
-const trueBtt      = document.getElementById('trueBtt')    ;
-const falseBtt     = document.getElementById('falseBtt')   ;
-const timerText    = document.getElementById('timerText')  ;
-const lastResult   = document.getElementById('lastResult') ;
-
-
-
-//Class question
+//Classes
 class Question{
 
     constructor(question, correct_as, incorrect_as){
 
-        this.question     = decodeURI(question)        ;
-        this.correct_as   = decodeURI(correct_as)      ;
-        this.incorrect_as = decodeURI(incorrect_as[0]) ;
+        this.question     = decodeURIComponent(question);
+        this.correct_as   = decodeURIComponent(correct_as);
+        this.incorrect_as = [decodeURIComponent(incorrect_as[0]), decodeURIComponent(incorrect_as[1]), decodeURIComponent(incorrect_as[2])];
 
     }
 
 }
-
-
 
 //Pick all quizz from web
 function loadQuizz(url){
@@ -70,6 +68,7 @@ function loadQuizz(url){
 
 }
 
+
 //Display question
 function displayQuestion(){
 
@@ -79,13 +78,52 @@ function displayQuestion(){
 
     }
 
-    if(currentQuestion < limitQuestion){
+    if(currentQuestion < limitQ){
 
-        questionText.innerHTML = arrayQuestions[currentQuestion].question ;
+        questionElement.innerHTML = arrayQuestions[currentQuestion].question ;
 
-        currentCorrect   = arrayQuestions[currentQuestion].correct_as   ;
-        currentIncorrect = arrayQuestions[currentQuestion].incorrect_as ;
+        currentCorrect = arrayQuestions[currentQuestion].correct_as;
         
+        var random = Math.floor(Math.random() * 4) + 1;
+        
+        if(random == 1){
+
+            currentCorrectBtt = 1 ;
+
+            bttOne.textContent   = arrayQuestions[currentQuestion].correct_as      ;
+            bttTwo.textContent   = arrayQuestions[currentQuestion].incorrect_as[0] ; 
+            bttTree.textContent  = arrayQuestions[currentQuestion].incorrect_as[1] ; 
+            bttForth.textContent = arrayQuestions[currentQuestion].incorrect_as[2] ; 
+
+        }else if(random == 2){
+
+            currentCorrectBtt = 2 ;
+
+            bttOne.textContent   = arrayQuestions[currentQuestion].incorrect_as[0] ;
+            bttTwo.textContent   = arrayQuestions[currentQuestion].correct_as      ; 
+            bttTree.textContent  = arrayQuestions[currentQuestion].incorrect_as[1] ; 
+            bttForth.textContent = arrayQuestions[currentQuestion].incorrect_as[2] ; 
+
+        }else if(random == 3){
+
+            currentCorrectBtt = 3 ;
+
+            bttOne.textContent   = arrayQuestions[currentQuestion].incorrect_as[0] ;
+            bttTwo.textContent   = arrayQuestions[currentQuestion].incorrect_as[1] ; 
+            bttTree.textContent  = arrayQuestions[currentQuestion].correct_as      ; 
+            bttForth.textContent = arrayQuestions[currentQuestion].incorrect_as[2] ; 
+
+        }else{
+
+            currentCorrectBtt = 4 ;
+
+            bttOne.textContent   = arrayQuestions[currentQuestion].incorrect_as[0] ;
+            bttTwo.textContent   = arrayQuestions[currentQuestion].incorrect_as[1] ; 
+            bttTree.textContent  = arrayQuestions[currentQuestion].incorrect_as[2] ; 
+            bttForth.textContent = arrayQuestions[currentQuestion].correct_as      ; 
+
+        }
+
         fullTimer();
 
         currentQuestion++;  
@@ -103,7 +141,7 @@ function checkCorrect(as){
 
     if (timer >= 0) {
 
-        if(as == currentCorrect){
+        if(as == currentCorrectBtt){
 
             score++;
             
@@ -132,8 +170,6 @@ function checkCorrect(as){
 //Timer
 function fullTimer() {
 
-    
-
     if(!isStart)
         globalTimer -= (10 - timer);
 
@@ -145,11 +181,11 @@ function fullTimer() {
 
         $('.btn').prop('disabled', false);
 
-        document.getElementById("timerText").textContent = timer;
+        timerElementT.textContent = timer;
 
         timer--;
 
-        trueBtt.addEventListener('click', function(){
+        bttOne.addEventListener('click', function(){
 
             $('.btn').prop('disabled', true);
             clearInterval(timerGame);
@@ -157,7 +193,23 @@ function fullTimer() {
 
         });
         
-        falseBtt.addEventListener('click', function(){
+        bttTwo.addEventListener('click', function(){
+
+            $('.btn').prop('disabled', true);
+            clearInterval(timerGame);
+            return;
+
+        });
+
+        bttTree.addEventListener('click', function(){
+
+            $('.btn').prop('disabled', true);
+            clearInterval(timerGame);
+            return;
+
+        });
+
+        bttForth.addEventListener('click', function(){
 
             $('.btn').prop('disabled', true);
             clearInterval(timerGame);
@@ -171,7 +223,7 @@ function fullTimer() {
 
 }
 
-//End quizz function when he gets to 10 questions
+//End quizz function when he gets to 30 questions
 function endQuizz(){
 
     alert("You did " + score + " points!");

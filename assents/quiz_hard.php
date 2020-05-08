@@ -13,10 +13,10 @@
         </div>
         
         <div class="response type-response">
-            <button class="btn" id="response_1" ></button>
-            <button class="btn" id="response_2" ></button>
-            <button class="btn" id="response_3" ></button>
-            <button class="btn" id="response_4" ></button>
+            <button class="btn" onclick='checkCorrect("1")' id="response_1" ></button>
+            <button class="btn" onclick='checkCorrect("2")' id="response_2" ></button>
+            <button class="btn" onclick='checkCorrect("3")' id="response_3" ></button>
+            <button class="btn" onclick='checkCorrect("4")' id="response_4" ></button>
         </div>
         
         <div>
