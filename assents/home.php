@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="assents/css/home.css">
 <script src="assents/js/home.js" async defer></script> 
 
-<div class="col-md-12 col-lg-9 backPadding">
-<div class="inicialization-card backPadding" style="height: 1400px; background-color: #fff; margin-bottom: 100px;">
+<div class="col-md-12 col-lg-9 backPadding" style="padding-bottom: 100px">
+<div class="inicialization-card backPadding" style="height: 100%; background-color: #fff; margin-bottom: 50px;">
 <div class="container-fluid backPadding">
 <div class="title" style="text-align:center; width:100%;">
 
@@ -123,6 +123,17 @@
             
         </div>
     <?php }} ?>
+
+    <div class="col-xl-12 col-sm-12 col-12 text-center checkpage">
+        <div class="position-absolute">
+            <a class="box-page box-page-active">1</a>
+            <a class="box-page">2</a>
+            <a class="box-page">3</a>
+            <a class="box-page">4</a>
+            <a class="box-page">5</a>
+            <a class="box-page">6</a>
+        </div>
+    </div>
     
     <div class="modal fade bd-example-modal-lg modal" tabindex="-1" role="dialog"  aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <a type="button" class="close-modal" data-dismiss="modal" aria-label="Close">

@@ -2,8 +2,8 @@
   <link rel="stylesheet" href="assents/css/main-menu.css"> 
   <script src="assents/js/main-menu.js" async defer></script>   
 
-   <div class="col-md-12 col-lg-3">
-        <div class="container-fluid main-menu-mother" style="height: 1400px; background-color: #fff; padding-top:30px; margin-bottom: 100px;">
+   <div class="col-md-12 col-lg-3" style="padding-bottom: 100px">
+        <div class="container-fluid main-menu-mother" style="height: 100%; background-color: #fff; padding-top:30px; margin-bottom: 50px;">
         <div class="row">
         <div class="col-12" style="position:relative;">
         <div class="line">   
