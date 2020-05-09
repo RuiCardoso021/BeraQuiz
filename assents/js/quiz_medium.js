@@ -1,4 +1,5 @@
 //Globals
+var isStart         = true  ;
 var isBooleanGame   = false ;
 var arrayQuestions  = []    ;
 var globalTimer     = 200   ;
@@ -82,7 +83,7 @@ function loadQuizz(url){
     
                 }else{
     
-                    let tempClass = new Question(res['results'][i]['question'],
+                    let tempClass = new BooleanGame(res['results'][i]['question'],
                         res['results'][i]['correct_answer'],
                         res['results'][i]['incorrect_answers']
                     );
@@ -271,8 +272,6 @@ function checkCorrect(as){
 
 //Timer
 function fullTimer() {
-
-    
 
     if(!isStart)
         globalTimer -= (10 - timer);
