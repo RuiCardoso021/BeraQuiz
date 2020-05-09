@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif!important;
+    font-family: monospace;
 }
 body {
     background: #ededed;
@@ -56,7 +56,7 @@ button {
     font-size: 15px;
     cursor: pointer;
 }
-.img {
+.img-prof {
     overflow: hidden;
     z-index: 2;
     position: absolute;
@@ -66,7 +66,7 @@ button {
     height: 100%;
     padding-top: 360px;
 }
-.img:before {
+.img-prof:before {
     content: '';
     position: absolute;
     right: 0;
@@ -77,9 +77,9 @@ button {
     background-size: cover;
     transition: transform 1.2s ease-in-out;
 }
-.forgot{width: 100px;}
+.forgot{max-width: 110px;}
 .forgot:hover{color: #000; cursor: pointer;}
-.img:after {
+.img-prof:after {
     content: '';
     position: absolute;
     left: 0;
@@ -88,7 +88,7 @@ button {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
 }
-.cont.s--signup .img:before {
+.cont.s--signup .img-prof:before {
     transform: translate3d(640px, 0, 0);
 }
 .img__text {
@@ -106,6 +106,29 @@ button {
     margin-bottom: 10px;
     font-weight: normal;
 }
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212931;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/wallpaper_play_game.jpg);
+    background-position: center, center, top center;
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll;
+    background-size: cover;
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (orientation: portrait){
+.bg {
+    background-size: auto, auto, auto 100%;
+}}
 .img__text p {
     font-size: 14px;
     line-height: 1.5;
@@ -269,17 +292,6 @@ input {
         border-bottom: 1px solid #c00000;
     }
 
-.img-logo{   
-    margin-top: 30px;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    display: flow-root;
-    margin-bottom: 50px;}
-.img-logo-1{
-    width: 115px;
-    height: 100px;
-}
 .menssage-error, .menssage-error-register{
     display: none;    
     text-align: center;
@@ -326,15 +338,26 @@ input {
   .valid {
     color: rgb(135, 141, 146);
   }
-  
+  .cont{border-radius: 50px; margin-top: 135px;}
   .valid:before {
     position: relative;
     left: -35px;
     content: "✔"!important;
   }
-  
+  #top-auto{display: none;}
   .invalid:before {
     position: relative;
     left: -35px;
     content: "✖";
   }
+
+  @media only screen and (max-width: 930px) {
+    body{padding: 0 15px}
+    .cont, .form{width: 100%; max-width: 400px;}
+    .sub-cont{display: none;}
+    label, button{width: 100%; max-width: 260px; height: auto!important;}
+    .btn-first{min-height: 35px;}
+    .btn-tres{min-height: 40px;}
+  }
+  @media only screen and (max-width: 300px) {body{padding: 0 3px} .cont, button{border-radius: 20px!important;} .form {padding: 50px 5px 0;}}
+

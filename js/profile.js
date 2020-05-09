@@ -18,6 +18,9 @@ function error_register() {
 }
 
 $(document).ready(function(){
+    $(".item-home").removeClass("active-nav");
+    $(".item-profile").addClass("active-nav");
+
     //login
     $("#btn_login").click(function(){
       $.post("./xpto/login.php",

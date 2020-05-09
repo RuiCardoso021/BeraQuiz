@@ -11,9 +11,9 @@
 </head>
 <body>
 
-<div class="img-logo">
-    <img class="img-logo-1" src="img/logo.png" alt="Bera Quiz">
-</div>
+<?php include 'assents/menu.php';?>
+
+
 <div class="cont form-my">
   <div class="form sign-in">
     <h2>Welcome to BeraQuiz,</h2>
@@ -34,7 +34,7 @@
     <p class="menssage-error">Your email our password are incorrect!</p>
   </div>
   <div class="sub-cont">
-    <div class="img">
+    <div class="img-prof">
       <div class="img__text m--up">
         <h2>New here?</h2>
         <p>Sign up and show us that you are the best in the rank!</p>
@@ -76,8 +76,9 @@
   </div>
 </div>
 
-
+    <div class="bg" style="transform: none;"></div>
     <!-- bootstrap -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

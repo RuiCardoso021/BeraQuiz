@@ -206,7 +206,7 @@
 
     .navbar .active a, .nav a:focus {
         color:#c00000!important;
-        background-color: transparent !important;
+        background-color: transparent;
         font-weight: bold;
     }
 
