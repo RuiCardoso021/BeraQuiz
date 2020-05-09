@@ -69,7 +69,7 @@ function loadQuizz(url){
 
             for(var i = 0; i < 20; i++){
 
-                if(String(res['results'][i]['incorrect_answers'][2]) != null || String(res['results'][i]['incorrect_answers'][2]) != ""){
+                if(Array(res['results'][i]['incorrect_answers']).length > 1){
 
 
                     let tempClass = new MultiGame(res['results'][i]['question'],
