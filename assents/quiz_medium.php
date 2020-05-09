@@ -12,16 +12,16 @@
             <p id="question"></p>
         </div>
         
-        <div class="response-bool type-response">
-            <button class="btn" id="trueBtt" onclick='checkCorrect("True")'>True</button>
-            <button class="btn" id="falseBtt" onclick='checkCorrect("False")'>False</button>
+        <div class="response-bool type-response" id="trueFalseGame">
+            <button class="btn" onclick='checkCorrect("True")' id="trueBtt">True</button>
+            <button class="btn" onclick='checkCorrect("False")' id="falseBtt">False</button>
         </div>
 
-        <div class="response-multiple type-response">
-            <button class="btn" id="response_1" ></button>
-            <button class="btn" id="response_2" ></button>
-            <button class="btn" id="response_3" ></button>
-            <button class="btn" id="response_4" ></button>
+        <div class="response-multiple type-response" id="multiGamePart">
+            <button class="btn" onclick='checkCorrect("1")'  id="response_1" ></button>
+            <button class="btn" onclick='checkCorrect("2")'  id="response_2" ></button>
+            <button class="btn" onclick='checkCorrect("3")'  id="response_3" ></button>
+            <button class="btn" onclick='checkCorrect("4")'  id="response_4" ></button>
         </div>
         
         <div>
