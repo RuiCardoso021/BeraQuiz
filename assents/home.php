@@ -134,12 +134,12 @@
 
     <div class="col-xl-12 col-sm-12 col-12 text-center checkpage">
         <div class="position-absolute">
-            <a class="box-page box-page-active">1</a>
-            <a class="box-page">2</a>
-            <a class="box-page">3</a>
-            <a class="box-page">4</a>
-            <a class="box-page">5</a>
-            <a class="box-page">6</a>
+            <a href="index.php&page=1" pageId="1" class="box-page box-page-active">1</a>
+            <a href="index.php&page=2" pageId="2" class="box-page">2</a>
+            <a href="index.php&page=3" pageId="3" class="box-page">3</a>
+            <a href="index.php&page=4" pageId="4" class="box-page">4</a>
+            <a href="index.php&page=5" pageId="5" class="box-page">5</a>
+            <a href="index.php&page=6" pageId="6" class="box-page">6</a>
         </div>
     </div>
     

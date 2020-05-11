@@ -10,9 +10,16 @@ $(document).ready(function(){
 
   //close main menu from icon "x"
   $(".close-main-menu").click(function(){
-    $('.menu-lateral-mobile').css("display","none");
+    $('.menu-lateral-mobile').toggle(100)(function() {
+      $('.menu-lateral-mobile').animate({width: 'toggle'});
+    });
   });
   
+  //page to show quiz
+  $('.box-page').on('click',function(){ 
+
+    var pageId = $(this).attr('pageId');
+  });
 
   $('.btn-secound').on('click',function(){ 
 

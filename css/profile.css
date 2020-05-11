@@ -352,12 +352,12 @@ input {
   }
 
   @media only screen and (max-width: 930px) {
-    body{padding: 0 15px}
+    .padding-body{padding: 0 15px}
     .cont, .form{width: 100%; max-width: 400px;}
     .sub-cont{display: none;}
     label, button{width: 100%; max-width: 260px; height: auto!important;}
     .btn-first{min-height: 35px;}
     .btn-tres{min-height: 40px;}
   }
-  @media only screen and (max-width: 300px) {body{padding: 0 3px} .cont, button{border-radius: 20px!important;} .form {padding: 50px 5px 0;}}
+  @media only screen and (max-width: 300px) {.padding-body{padding: 0 3px} .cont, button{border-radius: 20px!important;} .form {padding: 50px 5px 0;}}
 
