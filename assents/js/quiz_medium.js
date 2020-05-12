@@ -111,7 +111,7 @@ function displayQuestion(){
 
     }
 
-    if(typeof arrayQuestions[i] != BooleanGame){
+    if(typeof arrayQuestions[currentQuestion] != BooleanGame){
 
         isBooleanGame = false;
 
@@ -119,7 +119,7 @@ function displayQuestion(){
 
         if(currentQuestion < limitQ){
 
-            questionText.innerHTML = arrayQuestions[currentQuestion].question ;
+            questionElement.innerHTML = arrayQuestions[currentQuestion].question ;
     
             currentCorrect = arrayQuestions[currentQuestion].correct_as;
         
@@ -297,6 +297,38 @@ function fullTimer() {
         });
         
         falseBtt.addEventListener('click', function(){
+
+            $('.btn').prop('disabled', true);
+            clearInterval(timerGame);
+            return;
+
+        });
+
+        bttOne.addEventListener('click', function(){
+
+            $('.btn').prop('disabled', true);
+            clearInterval(timerGame);
+            return;
+
+        });
+        
+        bttTwo.addEventListener('click', function(){
+
+            $('.btn').prop('disabled', true);
+            clearInterval(timerGame);
+            return;
+
+        });
+
+        bttTree.addEventListener('click', function(){
+
+            $('.btn').prop('disabled', true);
+            clearInterval(timerGame);
+            return;
+
+        });
+
+        bttForth.addEventListener('click', function(){
 
             $('.btn').prop('disabled', true);
             clearInterval(timerGame);
