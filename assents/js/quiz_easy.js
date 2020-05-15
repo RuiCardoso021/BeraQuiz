@@ -18,6 +18,7 @@ const trueBtt      = document.getElementById('trueBtt')    ;
 const falseBtt     = document.getElementById('falseBtt')   ;
 const timerText    = document.getElementById('timerText')  ;
 const lastResult   = document.getElementById('lastResult') ;
+const scoreHtml    = document.getElementById("score")      ;
 
 //Class question
 class Question{
@@ -103,6 +104,8 @@ function checkCorrect(as){
 
             score++;
             
+            scoreHtml.innerHTML = score;
+
             lastResult.textContent = "Last Result: Correct";
 
             displayQuestion();

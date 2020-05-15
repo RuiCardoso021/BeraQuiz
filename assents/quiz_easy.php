@@ -18,7 +18,12 @@
         </div>
         
         <div>
-            <h2 id="lastResult">Last Result: </h2>
+            <div>
+                <h2 id="lastResult">Last Result: </h2>
+            </div>
+            <div>
+                <h2 ><span id="score">0</span> / 10 </h2>
+            </div>
         </div>
     </div>
 
