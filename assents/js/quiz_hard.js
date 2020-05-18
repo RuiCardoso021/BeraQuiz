@@ -247,7 +247,12 @@ function endQuizz(){
 //Sec to time
 function secToTime(timeInSeconds) {
 
-    var pad = function(num, size) { return ('000' + num).slice(size * -1); },
+    var pad = function(num, size) { 
+        
+        return ('000' + num).slice(size * -1); 
+    
+    },
+    
     time = parseFloat(timeInSeconds).toFixed(3);
     minutes = Math.floor(time / 60) % 60;
     seconds = Math.floor(time - minutes * 60);
