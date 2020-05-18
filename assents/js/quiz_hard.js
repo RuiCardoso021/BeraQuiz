@@ -21,6 +21,10 @@ const bttTwo   = document.getElementById('response_2') ;
 const bttTree  = document.getElementById('response_3') ;
 const bttForth = document.getElementById('response_4') ;
 
+const finalPopUP = document.getElementById('popUpEnd')            ;
+const finalScore = document.getElementById('finalScorePopUpText') ;
+const finalTime  = document.getElementById('idTimerFinalCount')   ;
+
 //Classes
 class Question{
 
@@ -36,6 +40,8 @@ class Question{
 
 //Pick all quizz from web
 function loadQuizz(url){
+
+    finalPopUP.style.display = hide;
 
     $.ajax({
 
@@ -226,7 +232,7 @@ function fullTimer() {
 //End quizz function when he gets to 30 questions
 function endQuizz(){
 
-    alert("You did " + score + " points!");
-    alert( 300 - globalTimer);
-
+    finalPopUP.style.display = show;
+    finalScore.innerText = "Score: " + score + "/30";
+    finalTime.innerText = "Time: " + 300 - globalTimer + "/300";
 }

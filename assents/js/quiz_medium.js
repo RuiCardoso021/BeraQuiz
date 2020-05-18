@@ -32,6 +32,10 @@ const trueFalseG = document.getElementById('trueFalseGame') ;
 const trueBtt    = document.getElementById('trueBtt')       ;
 const falseBtt   = document.getElementById('falseBtt')      ;
 
+const finalPopUP = document.getElementById('popUpEnd')            ;
+const finalScore = document.getElementById('finalScorePopUpText') ;
+const finalTime  = document.getElementById('idTimerFinalCount')   ;
+
 //Classes
 class MultiGame{
 
@@ -59,6 +63,8 @@ class BooleanGame{
 
 //Pick all quizz from web
 function loadQuizz(url){
+
+    finalPopUP.style.display = hide;
 
     $.ajax({
 
@@ -345,7 +351,8 @@ function fullTimer() {
 //End quizz function when he gets to 10 questions
 function endQuizz(){
 
-    alert("You did " + score + " points!");
-    alert( 200 - globalTimer);
+    finalPopUP.style.display = show;
+    finalScore.innerText = "Score: " + score + "/20";
+    finalTime.innerText = "Time: " + 200 - globalTimer + "/200";
 
 }

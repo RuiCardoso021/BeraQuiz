@@ -21,6 +21,13 @@ const timerText    = document.getElementById('timerText')  ;
 const lastResult   = document.getElementById('lastResult') ;
 const scoreHtml    = document.getElementById("score")      ;
 
+const finalPopUP = document.getElementById('popUpEnd')            ;
+const finalScore = document.getElementById('finalScorePopUpText') ;
+const finalTime  = document.getElementById('idTimerFinalCount')   ;
+
+const hide = "block" ;
+const show = "none"  ;
+
 //Class question
 class Question{
 
@@ -36,6 +43,8 @@ class Question{
 
 //Pick all quizz from web
 function loadQuizz(url){
+
+    finalPopUP.style.display = hide;
 
     $.ajax({
 
@@ -183,7 +192,8 @@ function fullTimer() {
 //End quizz function when he gets to 10 questions
 function endQuizz(){
 
-    alert("You did " + score + " points!");
-    alert( 100 - globalTimer);
+    finalPopUP.style.display = show;
+    finalScore.innerText = "Score: " + score + "/10";
+    finalTime.innerText = "Time: " + 100 - globalTimer + "/100";
 
 }
