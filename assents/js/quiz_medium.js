@@ -19,6 +19,7 @@ const show = "none"  ;
 const questionElement = document.getElementById('question')   ;
 const timerElementT   = document.getElementById('timerText')  ;
 const lastResult      = document.getElementById('lastResult') ;
+const gameDiv         = document.getElementById('gameDiv')    ;
 
 //Multi elements
 const multiG   = document.getElementById('multiGamePart') ;
@@ -351,6 +352,7 @@ function fullTimer() {
 //End quizz function when he gets to 10 questions
 function endQuizz(){
 
+    gameDiv.style.display = hide;
     finalPopUP.style.display = show;
     finalScore.innerText = "Score: " + score + "/20";
     finalTime.innerText = "Time: " + 200 - globalTimer + "/200";

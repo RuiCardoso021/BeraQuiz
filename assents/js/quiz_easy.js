@@ -14,6 +14,8 @@ var limitQuestion = 10  ;
 
 var isStart = true ;
 
+const gameDiv = document.getElementById('gameDiv') ;
+
 const questionText = document.getElementById('question')   ;
 const trueBtt      = document.getElementById('trueBtt')    ;
 const falseBtt     = document.getElementById('falseBtt')   ;
@@ -192,6 +194,7 @@ function fullTimer() {
 //End quizz function when he gets to 10 questions
 function endQuizz(){
 
+    gameDiv.style.display = hide;
     finalPopUP.style.display = show;
     finalScore.innerText = "Score: " + score + "/10";
     finalTime.innerText = "Time: " + 100 - globalTimer + "/100";

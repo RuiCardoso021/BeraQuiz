@@ -14,6 +14,7 @@ var currentCorrectBtt  ;
 const questionElement = document.getElementById('question')   ;
 const timerElementT   = document.getElementById('timerText')  ;
 const lastResult      = document.getElementById('lastResult') ;
+const gameDiv         = document.getElementById('gameDiv')    ;
 
 //Btts
 const bttOne   = document.getElementById('response_1') ;
@@ -232,7 +233,9 @@ function fullTimer() {
 //End quizz function when he gets to 30 questions
 function endQuizz(){
 
+    gameDiv.style.display = hide;
     finalPopUP.style.display = show;
     finalScore.innerText = "Score: " + score + "/30";
     finalTime.innerText = "Time: " + 300 - globalTimer + "/300";
+    
 }
