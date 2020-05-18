@@ -13,6 +13,7 @@ function countByStart(){
     setTimeout(() => {
         clearInterval(timerId);
         $(".caja").hide(700);
+        $(".name-quiz").hide(600);
         loadQuizz(url); 
         $('.btn').prop('disabled', true);
         $("#gameDiv").show(1000);
@@ -21,3 +22,6 @@ function countByStart(){
 
 }
 
+function refresh(){
+    location.reload();
+}

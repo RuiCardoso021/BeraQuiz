@@ -20,7 +20,6 @@ const questionText = document.getElementById('question')   ;
 const trueBtt      = document.getElementById('trueBtt')    ;
 const falseBtt     = document.getElementById('falseBtt')   ;
 const timerText    = document.getElementById('timerText')  ;
-const lastResult   = document.getElementById('lastResult') ;
 const scoreHtml    = document.getElementById("score")      ;
 
 const finalPopUP = document.getElementById('popUpEnd')            ;
@@ -119,8 +118,6 @@ function checkCorrect(as){
         if(as == currentCorrect){
 
             score++;
-
-            lastResult.textContent = "Score: " + score;
 
             displayQuestion();
 

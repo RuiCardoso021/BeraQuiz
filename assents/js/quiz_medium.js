@@ -352,7 +352,7 @@ function fullTimer() {
 //End quizz function when he gets to 10 questions
 function endQuizz(){
 
-    const finalTimer = 100 - globalTimer
+    const finalTimer = 100 - globalTimer;
     gameDiv.style.display = hide;
     finalPopUP.style.display = show;
     finalScore.innerText = "Score: " + score + "/20";

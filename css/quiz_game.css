@@ -15,7 +15,7 @@ body, html {
     width: 100%;
     height: 100%;
     background-color: #212931;
-    background-image: url(../../images/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../img/wallpaper_play_game.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/wallpaper_play_game.jpg);
     background-position: center, center, top center;
     background-repeat: repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
@@ -81,19 +81,19 @@ body, html {
     padding: 40px 8px;
     color: #161616;}
   
-  #popUpEnd a, #popUpEnd h1{font-size: 24px; font-family: monospace!important;}
+  #popUpEnd a, #popUpEnd h1{font-size: 22px; font-family: monospace!important;}
   
   #popUpEnd a{    width: 100%;
     padding: 6px 0px;
     display: flow-root;
-    font-size: 22px;
+    font-size: 18px;
     font-family: monospace!important;
     line-height: 30px;
     margin-top: 9px;
     border-radius: 0;
     height: auto;
     max-width: 250px;
-  cursor: pointer;}
+  cursor: pointer;text-decoration: none;}
   .btn-first{
       background-color: #c00000;
       color: #fff;
@@ -120,3 +120,12 @@ body, html {
       border: 2px solid #cacaca;
       color: #727272;
   }
+
+  .question-number{text-align: center; color: #fff;}
+  .question-number h2{font-size: 14px;}
+
+  .name-quiz{color: #fff; position: absolute;
+    margin-top: 140px;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: cursive;}
