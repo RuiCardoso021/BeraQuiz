@@ -27,8 +27,8 @@ const finalPopUP = document.getElementById('popUpEnd')            ;
 const finalScore = document.getElementById('finalScorePopUpText') ;
 const finalTime  = document.getElementById('idTimerFinalCount')   ;
 
-const hide = "none"  ;
-const show = "block" ;
+const hide = "none" ;
+const show = "block"  ;
 
 //Class question
 class Question{
@@ -45,8 +45,6 @@ class Question{
 
 //Pick all quizz from web
 function loadQuizz(url){
-
-    finalPopUP.style.display = hide;
 
     $.ajax({
 
@@ -98,7 +96,7 @@ function displayQuestion(){
 
         currentCorrect   = arrayQuestions[currentQuestion].correct_as   ;
         currentIncorrect = arrayQuestions[currentQuestion].incorrect_as ;
-        
+
         fullTimer();
 
         currentQuestion++;  
@@ -144,7 +142,7 @@ function checkCorrect(as){
 //Timer
 function fullTimer() {
 
-    
+     
 
     if(!isStart)
         globalTimer -= (10 - timer);
@@ -194,26 +192,9 @@ function fullTimer() {
 //End quizz function when he gets to 10 questions
 function endQuizz(){
 
-    const finalTimer = 100 - globalTimer
     gameDiv.style.display = hide;
     finalPopUP.style.display = show;
     finalScore.innerText = "Score: " + score + "/10";
-    finalTime.innerText = "Time: " + secToTime(finalTimer) + "/01:40";
+    finalTime.innerText = "Time: " + 100 - globalTimer + "/100";
 
-}
-
-//Sec to time
-function secToTime(timeInSeconds) {
-
-    var pad = function(num, size) { 
-        
-        return ('000' + num).slice(size * -1); 
-    
-    },
-    
-    time = parseFloat(timeInSeconds).toFixed(3);
-    minutes = Math.floor(time / 60) % 60;
-    seconds = Math.floor(time - minutes * 60);
-
-    return pad(minutes, 2) + ':' + pad(seconds, 2);
 }

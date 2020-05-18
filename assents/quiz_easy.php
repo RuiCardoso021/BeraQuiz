@@ -27,16 +27,6 @@
         </div>
     </div>
 
-    <div id="popUpEnd">
 
-        <h1 id="finalScorePopUpText">
-
-
-        </h1>
-
-        <h1 id="idTimerFinalCount">
-
-        </h1>
-    </div>
 
 

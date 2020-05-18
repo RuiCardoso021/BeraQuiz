@@ -72,3 +72,51 @@ body, html {
     height: 40px;
     line-height: 26px;
   }
+
+  #popUpEnd{display: none;
+    width: 100%;
+    max-width: 400px;
+    text-align: -webkit-center;
+    background-color: #fff;
+    padding: 40px 8px;
+    color: #161616;}
+  
+  #popUpEnd a, #popUpEnd h1{font-size: 24px; font-family: monospace!important;}
+  
+  #popUpEnd a{    width: 100%;
+    padding: 6px 0px;
+    display: flow-root;
+    font-size: 22px;
+    font-family: monospace!important;
+    line-height: 30px;
+    margin-top: 9px;
+    border-radius: 0;
+    height: auto;
+    max-width: 250px;
+  cursor: pointer;}
+  .btn-first{
+      background-color: #c00000;
+      color: #fff;
+      border: 2px solid #ffffff00;
+      border-radius: 50px;
+      font-weight: bold;
+  }
+  
+  .btn-first:hover{
+      background-color: #fff;
+      color: #c00000;
+      border: 2px solid #c00000;
+  }
+  
+  .btn-secound{
+      background-color: #cacaca;
+      border: 2px solid #cacaca;
+      color: #000;
+      border-radius: 50px;
+  }
+  
+  .btn-secound:hover{
+      background-color: #fff;
+      border: 2px solid #cacaca;
+      color: #727272;
+  }

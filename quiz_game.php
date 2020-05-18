@@ -72,7 +72,17 @@ $user = new Quiz();
             }
         ?>
         
+        <div id="popUpEnd">
 
+            <h1 id="finalScorePopUpText"></h1>
+
+            <h1 id="idTimerFinalCount"></h1>
+
+            <a class="btn-first"> LET`S PLAY AGAIN </a>
+
+            <a class="btn-secound"> GO BACK TO MENU </a>
+
+        </div>
 
         <div class="bg" style="transform: none;"></div>
 
