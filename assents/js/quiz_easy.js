@@ -27,8 +27,8 @@ const finalPopUP = document.getElementById('popUpEnd')            ;
 const finalScore = document.getElementById('finalScorePopUpText') ;
 const finalTime  = document.getElementById('idTimerFinalCount')   ;
 
-const hide = "block" ;
-const show = "none"  ;
+const hide = "none"  ;
+const show = "block" ;
 
 //Class question
 class Question{

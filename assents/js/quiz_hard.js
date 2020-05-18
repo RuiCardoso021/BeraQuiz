@@ -10,6 +10,9 @@ var currentCorrect     ;
 var currentQuestion    ;
 var currentCorrectBtt  ;
 
+const hide = "none"  ;
+const show = "block" ;
+
 //Elements
 const questionElement = document.getElementById('question')   ;
 const timerElementT   = document.getElementById('timerText')  ;
@@ -237,5 +240,5 @@ function endQuizz(){
     finalPopUP.style.display = show;
     finalScore.innerText = "Score: " + score + "/30";
     finalTime.innerText = "Time: " + 300 - globalTimer + "/300";
-    
+
 }

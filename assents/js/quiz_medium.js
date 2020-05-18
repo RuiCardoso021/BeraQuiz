@@ -12,8 +12,8 @@ var currentCorrectBtt       ;
 //Consts
 const limitQ = 20;
 
-const hide = "block" ;
-const show = "none"  ;
+const hide = "none"  ;
+const show = "block" ;
 
 //Global elements
 const questionElement = document.getElementById('question')   ;
@@ -351,6 +351,7 @@ function fullTimer() {
 
 //End quizz function when he gets to 10 questions
 function endQuizz(){
+
 
     gameDiv.style.display = hide;
     finalPopUP.style.display = show;
