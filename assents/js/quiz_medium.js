@@ -352,10 +352,21 @@ function fullTimer() {
 //End quizz function when he gets to 10 questions
 function endQuizz(){
 
-
+    const finalTimer = 100 - globalTimer
     gameDiv.style.display = hide;
     finalPopUP.style.display = show;
     finalScore.innerText = "Score: " + score + "/20";
-    finalTime.innerText = "Time: " + 200 - globalTimer + "/200";
+    finalTime.innerText = "Time: " + secToTime(finalTimer)+ "/03:20";
 
+}
+
+//Sec to time
+function secToTime(timeInSeconds) {
+
+    var pad = function(num, size) { return ('000' + num).slice(size * -1); },
+    time = parseFloat(timeInSeconds).toFixed(3);
+    minutes = Math.floor(time / 60) % 60;
+    seconds = Math.floor(time - minutes * 60);
+
+    return pad(minutes, 2) + ':' + pad(seconds, 2);
 }
