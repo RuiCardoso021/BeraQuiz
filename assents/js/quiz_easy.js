@@ -7,6 +7,7 @@ var currentIncorrect ;
 
 var score = 0 ;
 var timer = 0 ;
+var questionNumber = 1;
 
 var globalTimer   = 100 ;
 var limitQuestion = 10  ;
@@ -78,6 +79,10 @@ function displayQuestion(){
 
     if(currentQuestion < limitQuestion){
 
+        scoreHtml.innerHTML = questionNumber;
+
+        questionNumber ++;
+
         questionText.innerHTML = arrayQuestions[currentQuestion].question ;
 
         currentCorrect   = arrayQuestions[currentQuestion].correct_as   ;
@@ -98,29 +103,26 @@ function displayQuestion(){
 //Check if is correct
 function checkCorrect(as){
 
+    //if not have timer
     if (timer >= 0) {
 
+        //question correct
         if(as == currentCorrect){
 
             score++;
-            
-            scoreHtml.innerHTML = score;
 
-            lastResult.textContent = "Last Result: Correct";
+            lastResult.textContent = "Score: " + score;
 
             displayQuestion();
 
         }else if(as == currentIncorrect){
 
-            lastResult.textContent = "Last Result: Incorrect";
-
+            //error question
             displayQuestion();
 
         }
         
     } else {
-
-        lastResult.textContent = "Last Result: No Time";
 
         displayQuestion();
 
@@ -147,6 +149,14 @@ function fullTimer() {
         document.getElementById("timerText").textContent = timer;
 
         timer--;
+
+        if (timer == -1){ 
+
+            $('.btn').prop('disabled', true);
+            clearInterval(timerGame);
+            displayQuestion();
+
+        }
 
         trueBtt.addEventListener('click', function(){
 
