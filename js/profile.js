@@ -72,9 +72,9 @@ var numbers = /[0-9]/g;
 
 $(document).ready(function(){
     // When the user clicks on the password field, show the message box
-    myInput.onfocus = function() {$("#message").show(300);}
+    myInput.onfocus = function() {$("#message").show()}
     // When the user clicks outside of the password field, hide the message box
-    myInput.onblur = function() { $("#message").hide(300);}
+    myInput.onblur = function() { $("#message").hide();}
 
     // When the user starts to type something inside the password field
     myInput.onkeyup = function() {
@@ -111,3 +111,25 @@ $(document).ready(function(){
 
   }
 });
+
+
+$(window).resize(function() {
+  if ($(window).width() < 930) {
+    $(".letsGo").removeClass("block");
+    $(".linkMobile").removeClass("none");
+  }
+  else {
+    $(".letsGo").addClass("block");
+    $(".linkMobile").addClass("none");
+  }
+  });
+
+
+$(document).ready(function(){
+
+  $(".linkMobile").click(function(){
+    $(".letsGo").toggle();
+    $(".linkMobile").toggle();
+  });
+});
+

@@ -15,7 +15,7 @@
 
     <div class="padding-body">
       <div class="cont form-my">
-        <div class="form sign-in">
+        <div class="form sign-in letsGo">
           <h2>Welcome to BeraQuiz,</h2>
           <label>
             <span>Email</span>
@@ -32,8 +32,10 @@
           <button type="button" class="fb-btn btn-tres">connect width <strong>facebook</strong></button>
 
           <p class="menssage-error">Your email our password are incorrect!</p>
+
+          <a class="linkMobile">Sing Up</a>
         </div>
-        <div class="sub-cont">
+        <div class="sub-cont letsGo">
           <div class="img-prof">
             <div class="img__text m--up">
               <h2>New here?</h2>
@@ -74,8 +76,12 @@
             <p class="menssage-error-register">This email already exists!</p>      
           </div>
         </div>
+        <a class="linkMobile" style="display: none;">Sing In</a>
       </div>
+
     </div>
+
+    
 
     <div class="bg" style="transform: none;"></div>
     <!-- bootstrap -->
