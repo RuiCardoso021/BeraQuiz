@@ -95,7 +95,7 @@
 .box-page{ box-shadow: 1px 1px 4px #2c2c2c; width: 35px; cursor: pointer; line-height: 30px; font-size: 14px; border: 1px solid rgb(31, 31, 31); color: rgb(31, 31, 31); margin: 3px; text-align: center; font-family: "Montserrat", sans-serif;}
 .checkpage{margin-top: 50px;}
 .box-page:hover, .box-page:active{box-shadow: 0 0; text-decoration: none; color: #000;}
-.box-page-active{box-shadow: 0 0; font-weight: bold; }
+/*.box-page-active{box-shadow: 0 0; font-weight: bold; }*/
 .position-absolute{left: 50%; display: inline-flex; transform: translate(-50%, 0);}
 .icon-main-menu{display: none;}
 @media only screen and (max-width: 992px) {

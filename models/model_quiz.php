@@ -11,9 +11,9 @@ class Quiz{
     }
 
     //todos os quiz
-    public function getEverthingData(){ 
+    public function getEverthingData($end, $begin){ 
         $list = [];
-		$stmt = $this->conn->prepare("SELECT quiz_id, quiz_category, quiz_difficulty, quiz_questions_number, quiz_type FROM rxz_quiz");
+		$stmt = $this->conn->prepare("SELECT quiz_id, quiz_category, quiz_difficulty, quiz_questions_number, quiz_type FROM rxz_quiz WHERE quiz_id <= '$end' AND quiz_id >= '$begin'");
         $stmt->execute(); 
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		foreach($rows as $row) {

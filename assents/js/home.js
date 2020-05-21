@@ -15,12 +15,9 @@ $(document).ready(function(){
     });
   });
   
-  //page to show quiz
-  $('.box-page').on('click',function(){ 
 
-    var pageId = $(this).attr('pageId');
-  });
 
+  //rank
   $('.btn-secound').on('click',function(){ 
 
     var id_task = $(this).attr('data-id');
@@ -75,9 +72,9 @@ $(document).ready(function(){
             }
             $('.modal').modal("show");
             
-         }
+          s}
          
-    })
+    });
 
   });
 });

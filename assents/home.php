@@ -2,7 +2,55 @@
 <?php
     include "models/model_quiz.php";
     $quiz = new Quiz();
-    $list = $quiz->getEverthingData();
+
+
+    if(ISSET($_GET["page"]))
+    {
+        $menu = $_GET["page"];
+        switch ($menu) {
+            case 1:
+                $begin = 1;
+                $end   = 12;
+                echo "<style>.box-page-active-1{box-shadow: 0 0!important; font-weight: bold; }</style>";
+                break;
+            case 2:
+                $begin = 13;
+                $end   = 24;
+                echo "<style>.box-page-active-2{box-shadow: 0 0!important; font-weight: bold; }</style>";
+                break;
+            case 3:
+                $begin = 25;
+                $end   = 36;
+                echo "<style>.box-page-active-3{box-shadow: 0 0!important; font-weight: bold; }</style>";
+                break;
+            case 4:
+                $begin = 37;
+                $end   = 48;
+                echo "<style>.box-page-active-4{box-shadow: 0 0!important; font-weight: bold; }</style>";
+            break;
+            case 5:
+                echo "<style>.box-page-active-5{box-shadow: 0 0!important; font-weight: bold; }</style>";
+                $begin = 49;
+                $end   = 60;
+            break;
+            case 6:
+                echo "<style>.box-page-active-6{box-shadow: 0 0!important; font-weight: bold; }</style>";
+                $begin = 61;
+                $end   = 100;
+            break;						
+        default:
+                echo "<script> location.href='error.php'; </script>";
+                exit;
+            break;
+        }
+    }else{
+        $begin = 1;
+        $end   = 12;
+        echo "<style>.box-page-active-1{box-shadow: 0 0!important; font-weight: bold; }</style>";
+    }
+
+
+    $list = $quiz->getEverthingData($end, $begin);
 
 ?>
 
@@ -26,14 +74,12 @@
     </span>
 </div>
 
+
 <div class="row">
-    <?php $count = 0; ?>
     <?php foreach ($list as $row) { ?>
         <?php 
-        $count++;
         $id_quiz = $row["id"];
         ?>
-        <?php if ($count <= 12){ ?>
         <div class="col-xl-3 col-sm-4 col-6 link-quiz movie-quiz">
             <div class="card">
                 <div class="card-haeder-nav">
@@ -130,16 +176,16 @@
 
             
         </div>
-    <?php }} ?>
+    <?php } ?>
 
     <div class="col-xl-12 col-sm-12 col-12 text-center checkpage">
         <div class="position-absolute">
-            <a href="index.php&page=1" pageId="1" class="box-page box-page-active">1</a>
-            <a href="index.php&page=2" pageId="2" class="box-page">2</a>
-            <a href="index.php&page=3" pageId="3" class="box-page">3</a>
-            <a href="index.php&page=4" pageId="4" class="box-page">4</a>
-            <a href="index.php&page=5" pageId="5" class="box-page">5</a>
-            <a href="index.php&page=6" pageId="6" class="box-page">6</a>
+            <a href="index.php?page=1" pageId="1" class="box-page box-page-active-1">1</a>
+            <a href="index.php?page=2" pageId="2" class="box-page box-page-active-2">2</a>
+            <a href="index.php?page=3" pageId="3" class="box-page box-page-active-3">3</a>
+            <a href="index.php?page=4" pageId="4" class="box-page box-page-active-4">4</a>
+            <a href="index.php?page=5" pageId="5" class="box-page box-page-active-5">5</a>
+            <a href="index.php?page=6" pageId="6" class="box-page box-page-active-6">6</a>
         </div>
     </div>
     
