@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-12">
                             <div class="pretty p-default">
-                                <input type="checkbox" class="checkbox-menu" value="Board Games"/>
+                                <input type="checkbox" class="checkbox-menu" value="Board"/>
                                 <div class="state">
                                     <label>Board Games</label>
                                 </div>
@@ -112,17 +112,9 @@
                         </div>
                         <div class="col-12">
                             <div class="pretty p-default">
-                                <input type="checkbox" class="checkbox-menu" value="General Knowledge"/>
+                                <input type="checkbox" class="checkbox-menu" value="Knowledge"/>
                                 <div class="state">
                                     <label>General Knowledge</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="pretty p-default">
-                                <input type="checkbox" class="checkbox-menu" value="Music"/>
-                                <div class="state">
-                                    <label>Music</label>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +128,7 @@
                         </div>
                         <div class="col-12">
                             <div class="pretty p-default">
-                                <input type="checkbox" class="checkbox-menu" value="Japanese Anime"/>
+                                <input type="checkbox" class="checkbox-menu" value="Japanese"/>
                                 <div class="state">
                                     <label>Japanese Anime</label>
                                 </div>
@@ -176,7 +168,7 @@
                         </div>
                         <div class="col-12">
                             <div class="pretty p-default">
-                                <input type="checkbox" class="checkbox-menu" value="Science & Nature"/>
+                                <input type="checkbox" class="checkbox-menu" value="Nature"/>
                                 <div class="state">
                                     <label>Science & Nature</label>
                                 </div>
@@ -200,7 +192,7 @@
                         </div>
                         <div class="col-12">
                             <div class="pretty p-default">
-                                <input type="checkbox" class="checkbox-menu" value="Video Games"/>
+                                <input type="checkbox" class="checkbox-menu" value="Video"/>
                                 <div class="state">
                                     <label>Video Games</label>
                                 </div>
@@ -227,7 +219,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="pretty p-default">
-                                <input type="checkbox" />
+                                <input type="checkbox" class="checkbox-menu" value="easy"/>
                                 <div class="state">
                                     <label>Easy</label>
                                 </div>
@@ -235,7 +227,7 @@
                         </div>
                         <div class="col-12">
                             <div class="pretty p-default">
-                                <input type="checkbox" />
+                                <input type="checkbox" class="checkbox-menu" value="medium"/>
                                 <div class="state">
                                     <label>Medium</label>
                                 </div>
@@ -243,7 +235,7 @@
                         </div>
                         <div class="col-12">
                             <div class="pretty p-default">
-                                <input type="checkbox" />
+                                <input type="checkbox" class="checkbox-menu" value="hard"/>
                                 <div class="state">
                                     <label>Hard</label>
                                 </div>

@@ -3,16 +3,12 @@ $(document).ready(function(){
 
   //toggle to main menu
   $(document).on('click', '#item-home',function(){
-    $('.menu-lateral-mobile').toggle(100)(function() {
-      $('.menu-lateral-mobile').animate({width: 'toggle'});
-      $('.active-nav').prev().attr("active-nav");
-    });
+    $('.menu-lateral-mobile').toggle(100);
   });
 
   //close main menu from icon "x"
   $(".close-main-menu").click(function(){
-    $('.menu-lateral-mobile').toggle(100)(function() {
-    });
+    $('.menu-lateral-mobile').toggle(100);
   });
   
 

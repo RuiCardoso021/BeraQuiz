@@ -65,6 +65,8 @@
     <div style="border-bottom: 1px solid #0000001c;">
         <h3 style="padding:0; text-align:center;">Choice Your Favorite Quiz And Upgrade Your Rank</h3>
     </div>
+    <br>
+    <input id="myInput" type="text" placeholder="Search..">
 </div>
 
 <div class="row">
@@ -72,7 +74,7 @@
         <?php 
         $id_quiz = $row["id"];
         ?>
-        <div class="col-xl-4 col-sm-4 col-6 link-quiz movie-quiz">
+        <div class="col-xl-4 col-sm-4 col-6 link-quiz movie-quiz" data-category="<?php echo $row['category']." ".$row['difficulty'];?>">
             <div class="card">
                 <div class="card-haeder-nav">
                 <?php
