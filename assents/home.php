@@ -11,33 +11,33 @@
             case 1:
                 $begin = 1;
                 $end   = 12;
-                echo "<style>.box-page-active-1{box-shadow: 0 0!important; font-weight: bold; }</style>";
+                echo "<style>.box-page-active-1{font-weight: bold;}</style>";
                 break;
             case 2:
                 $begin = 13;
                 $end   = 24;
-                echo "<style>.box-page-active-2{box-shadow: 0 0!important; font-weight: bold; }</style>";
+                echo "<style>.box-page-active-1{font-weight: bold;}</style>";
                 break;
             case 3:
                 $begin = 25;
                 $end   = 36;
-                echo "<style>.box-page-active-3{box-shadow: 0 0!important; font-weight: bold; }</style>";
-                break;
+                echo "<style>.box-page-active-1{font-weight: bold;}</style>";
+            break;
             case 4:
                 $begin = 37;
                 $end   = 48;
-                echo "<style>.box-page-active-4{box-shadow: 0 0!important; font-weight: bold; }</style>";
-            break;
+                echo "<style>.box-page-active-1{font-weight: bold;}</style>";
+                break;
             case 5:
-                echo "<style>.box-page-active-5{box-shadow: 0 0!important; font-weight: bold; }</style>";
+                echo "<style>.box-page-active-1{font-weight: bold;}</style>";
                 $begin = 49;
                 $end   = 60;
-            break;
+                break;
             case 6:
-                echo "<style>.box-page-active-6{box-shadow: 0 0!important; font-weight: bold; }</style>";
+                echo "<style>.box-page-active-1{font-weight: bold;}</style>";
                 $begin = 61;
                 $end   = 100;
-            break;						
+                break;						
         default:
                 echo "<script> location.href='error.php'; </script>";
                 exit;
@@ -58,29 +58,21 @@
 <link rel="stylesheet" href="assents/css/home.css">
 <script src="assents/js/home.js" async defer></script> 
 
-<div class="col-md-12 col-lg-9 backPadding ajust-mobile">
+<div class="col-md-12 col-lg-12 col-xl-9 backPadding ajust-mobile">
 <div class="inicialization-card backPadding main-body">
 <div class="container-fluid backPadding main-body-padding">
-<div class="title" style="text-align:center; width:100%; padding: 20px 15px;">
+<div class="title insert-margin-mobile" style="text-align:center; width:100%; padding: 20px 15px;">
     <div style="border-bottom: 1px solid #0000001c;">
         <h3 style="padding:0; text-align:center;">Choice Your Favorite Quiz And Upgrade Your Rank</h3>
     </div>
 </div>
-<div class="icon-main-menu">
-    <span id="toggle-main-menu">
-        <svg class="svg bi bi-list-ul" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm0-4a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm0-4a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm-3 1a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
-        </svg>
-    </span>
-</div>
-
 
 <div class="row">
     <?php foreach ($list as $row) { ?>
         <?php 
         $id_quiz = $row["id"];
         ?>
-        <div class="col-xl-3 col-sm-4 col-6 link-quiz movie-quiz">
+        <div class="col-xl-4 col-sm-4 col-6 link-quiz movie-quiz">
             <div class="card">
                 <div class="card-haeder-nav">
                 <?php
@@ -163,12 +155,11 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row['category']; ?> Quiz</h5>
-                    <div class="ajust-btn">
+                    <div>
                         <a class="btn-secound" data-id="<?php echo $id_quiz; ?>" data-toggle="modal" data-target=".modal">RANK</a>
                         <a class="btn-first" href="quiz_game.php?<?php echo "id=".$id_quiz;?>">PLAY</a>
                     </div>
                     <div class="width">
-                        <div class="col-pers-1 <?php echo $row['difficulty']; ?>" ><?php echo $row['questions']." / ".$row['questions']; ?></div>
                         <div class="col-pers-2 <?php echo $row['difficulty']; ?>"> <?php echo "".$row['difficulty']; ?> </div>
                     </div>
                 </div>

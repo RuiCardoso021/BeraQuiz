@@ -2,18 +2,18 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: monospace; 
+    font-family: QuickSand sans-serif;
     color: rgb(17, 17, 17);
 }
 .body-index{margin-top:80px; max-width:1400px; overflow-y:hidden;}
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1201px) {
     h3{font-size: 22px!important;
 
 }
 }
 h3{letter-spacing: 3px;
     width: auto!important;
-    font-family: cursive!important;
+    font-family: QuickSand!important;
     font-size: 22px;
     font-weight: bold!important;
     color: #000;
@@ -25,7 +25,7 @@ h5{font-size: 18px;
     letter-spacing: 2px;}
     .close-main-menu{display: none;}
 html, body{ padding:0;margin:0;color: rgb(37, 37, 37); overflow-x: hidden;}
-@media only screen and (max-width: 992px) {.body-index{margin-top: 0;} body{background-color: #fff!important;}
+@media only screen and (max-width: 1201px) {.body-index{margin-top: 0;} body{background-color: #fff!important;}
  .backPadding{padding-left:1px!important;padding-right: 1px!important;} 
 h3{font-size: 20px;} h5{font-size: 16px;}
 .close-main-menu{display: block; top: 0!important; right: 0!important;}
@@ -42,32 +42,28 @@ h3{font-size: 20px;} h5{font-size: 16px;}
     background: rgb(44, 43, 42); 
 }
 
-.btn{width: 100%; border-radius: 0; height: 50px; padding: 10px;}
+.btn{width: 100%; border-radius: 0; height: 50px; padding: 10px; cursor: pointer;}
 .btn-first{
-    background-color: #c00000;
+    cursor: pointer;
+    background-color: #262627;
     color: #fff;
-    border: 2px solid #ffffff00;
-    border-radius: 50px;
     font-weight: bold;
 }
 
 .btn-first:hover{
-    background-color: #fff;
-    color: #c00000;
-    border: 2px solid #c00000;
+    opacity: 0.95;
+    color: #fff;
 }
 
 .btn-secound{
-    background-color: #cacaca;
-    border: 2px solid #cacaca;
+    cursor: pointer;
+    background-color: #ffffff;
     color: #000;
-    border-radius: 50px;
+    opacity: 0.5;
 }
 
 .btn-secound:hover{
-    background-color: #fff;
-    border: 2px solid #cacaca;
-    color: #000;
+    opacity: 1;
 }
 
 .pretty .state label:before{border-color: #000;}
@@ -99,5 +95,5 @@ h3{font-size: 20px;} h5{font-size: 16px;}
 }}
 
 .main-body{
-    height: 100%; background-color: #ffffffc9; margin-bottom: 50px; border-radius: 5px;
+    height: 100%; background-color: #fffffff7; margin-bottom: 50px; border-radius: 5px;
 }

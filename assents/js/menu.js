@@ -50,3 +50,16 @@ $(document).ready(function () {
     }
   });
 });
+
+
+// Active menu
+$(document).ready(function () {
+  $('#item-home').click(function () {
+    if($("#item-home").hasClass('active-nav')){
+
+      //removing the previous selected menu state
+      $('#item-home').find('li.active-nav').removeClass('active-nav');
+
+    }
+  });
+});

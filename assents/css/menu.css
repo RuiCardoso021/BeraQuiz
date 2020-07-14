@@ -2,7 +2,7 @@
 
 .mobile-footer {display: none;}
 
-#menu-top{background: rgba(0, 0, 0, 0.3); height: 56px; position: fixed; width: 100%; top: 0; z-index: 999;}
+#menu-top{background: rgba(0, 0, 0, 0.3); height: 56px; position: fixed; width: 100%; top: 0; z-index: 999; padding: 15px 0;}
 
 #navbarSupportedContent a{
     color: #fff;
@@ -20,7 +20,7 @@
 #navbarSupportedContent{position: relative;}
 
 /*MOBILE*/
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1201px) {
     .a-logo{text-align: center;}
 
     .logo-border {
@@ -57,7 +57,14 @@
         left: 0;
         z-index: 2;
     }
+}
 
+/*MOBILE*/
+@media only screen and (max-width: 1201px) {
+    .adaptar-col{ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
     #top-auto{display:none!important;}
 
     .mobile-footer {
@@ -117,6 +124,7 @@
         width: auto;
         height: 20px;
         max-width: 20px;
+        color: #000;
     }
     .mobile-footer>li>a>span>div {
         text-align: center;
@@ -141,7 +149,8 @@
 ul .nav-link{font-size: 15px!important;}
 
 /*DESKTOP*/
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1201px) {
+
     .a-logo{text-align: left;}
 
     .img-logo{
@@ -154,6 +163,11 @@ ul .nav-link{font-size: 15px!important;}
         top: -16.5px;
         left: 2px;
         z-index: 2;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
     .logo-border {
         -webkit-clip-path: ellipse(520% 100% at 50% 146.3%);
@@ -169,6 +183,11 @@ ul .nav-link{font-size: 15px!important;}
         -o-transition: .3s all;
         transition: .3s all;
         z-index: 1;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
     #top-auto {
         position: fixed;
@@ -198,13 +217,12 @@ ul .nav-link{font-size: 15px!important;}
         transition: .3s all;
         position: absolute;
         top: -21.5px;
-        left: 2px;
         z-index: 2;
     }
 
     .format-menu .logo-border {display: none!important;}
 
-    #navbarSupportedContent{width: 100%;}
+    #navbarSupportedContent{width: 100%; padding: 0; justify-content: center;}
 
     .navbar .active a, .nav a:focus {
         color:#c00000!important;

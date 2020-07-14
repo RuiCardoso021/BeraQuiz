@@ -6,14 +6,16 @@
         
             <!--Mobile Menu Top-->
             <nav class="navbar navbar-expand-md navbar-light navbar-fixed-top text-center" id="menu-top">
-              <div class="container">
-                  <div class="container" style="position:relative; width:140px;">
+              <div class="container-fluid container-menu">
+                <div class="col-xl-3 adaptar-col">
+                  <div class="container container-img-menu">
                       <a class="nav-link a-logo" href="#">
                           <div class="logo-border"></div>
                           <img class="img img-logo" src="img/logo.PNG" alt="Bera Quiz">
                       </a>
                   </div>
-                
+                </div>
+                <div class="col-xl-9">
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav navbar-right">
                       <li class="nav-item item-home active-nav" id="item-home">
@@ -30,6 +32,7 @@
                       </li>
                     </ul>
                   </div>
+                </div>
               </div>
             </nav>
 
@@ -37,12 +40,11 @@
 
             <!--Mobile Menu Button-->
             <ul class="nav mobile-footer" id="menu-mobile">
-                <li class="menu-mobile nav-item item-home active-nav" id="item-home">
-                    <a href="index.php" class="nav-link">
+                <li class="menu-mobile nav-item item-home" id="item-home">
+                    <a href="#" class="nav-link">
                         <span>
-                            <svg class="svg bi bi-house-door" id="Layer_1" data-name="Layer 1" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5H9.5a.5.5 0 01-.5-.5v-4H7v4a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 01.5-.5h3a.5.5 0 01.5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" clip-rule="evenodd"/>
-                                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
+                            <svg class="svg bi bi-list-ul" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm0-4a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm0-4a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm-3 1a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
                             </svg>
                         </span>
                     </a>
@@ -66,7 +68,7 @@
                         </span>
                     </a>
                 </li>
-                <li class="nav-itemi item-settings" id="item-settings">
+                <li class="nav-item item-settings" id="item-settings">
                     <a href="#" class="nav-link">
                         <span>
                             <svg class="svg bi bi-gear" id="Layer_1" data-name="Layer 1"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
