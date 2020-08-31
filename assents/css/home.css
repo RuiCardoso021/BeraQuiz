@@ -110,3 +110,32 @@
 a, p, label {font-family: QuickSand!important;}
 
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{padding: 0 14px}
+
+#searchput {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    width: 100%;
+    background: #776c6c00;
+    border-bottom: 1px solid #c7c7c7;
+    border-radius: 0;
+    color: #000;
+    max-width: 275px;
+    padding-left: 40px;
+}
+@media only screen and (max-width: 600px) {#searchput{max-width: 100%;}}
+#searchput:focus{
+    box-shadow: 0;
+    border-bottom: 1px solid #000;
+padding-left: 40px;}
+.search-page{padding: 0 20px;}
+
+.search-page::before{
+    width: 24px;
+    height: 30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    background-image: url("data:image/svg+xml, %3Csvg class='svg bi bi-search' id='Layer_1' data-name='Layer 1' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z' clip-rule='evenodd'/%3E%3C/svg%3E ");
+}

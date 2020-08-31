@@ -50,7 +50,7 @@
     }
 
 
-    $list = $quiz->getEverthingData($end, $begin);
+    $list = $quiz->getDataLimit($end, $begin);
 
 ?>
 
@@ -65,11 +65,12 @@
     <div style="border-bottom: 1px solid #0000001c;">
         <h3 style="padding:0; text-align:center;">Choice Your Favorite Quiz And Upgrade Your Rank</h3>
     </div>
-    <br>
-    <input id="myInput" type="text" placeholder="Search..">
+</div>
+<div class="search-page">
+    <input id="searchput" type="text" placeholder="Search..">
 </div>
 
-<div class="row">
+<div class="row row-bug">
     <?php foreach ($list as $row) { ?>
         <?php 
         $id_quiz = $row["id"];

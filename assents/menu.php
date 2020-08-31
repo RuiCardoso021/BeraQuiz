@@ -21,15 +21,15 @@
                       <li class="nav-item item-home active-nav" id="item-home">
                         <a class="nav-link" href="index.php">Home</a>
                       </li>
-                      <li class="nav-item item-search" id="item-search">
+                      <!--<li class="nav-item item-search" id="item-search">
                         <a class="nav-link" href="#">Search </a>
-                      </li>
+                      </li>-->
                       <li class="nav-item item-profile" id="item-profile">
                         <a class="nav-link" href="profile.php">Profile </a>
                       </li>
-                      <li class="nav-item item-settings" id="item-settings">
+                      <!--<li class="nav-item item-settings" id="item-settings">
                         <a class="nav-link" href="#">Settings </a>
-                      </li>
+                      </li>-->
                     </ul>
                   </div>
                 </div>
@@ -49,8 +49,8 @@
                         </span>
                     </a>
                 </li>
-                <li class="nav-item item-search" id="item-search">
-                    <a href="#" class="nav-link">
+                <!--<li class="nav-item item-search" id="item-search">
+                    <a href="#" class="nav-link"> 
                         <span>
                             <svg class="svg bi bi-search" id="Layer_1" data-name="Layer 1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
@@ -58,7 +58,7 @@
                             </svg>
                         </span>
                     </a>
-                </li>
+                </li>-->
                 <li class="nav-item item-profile" id="item-profile">
                     <a href="profile.php" class="nav-link">
                         <span>
@@ -68,7 +68,7 @@
                         </span>
                     </a>
                 </li>
-                <li class="nav-item item-settings" id="item-settings">
+                <!--<li class="nav-item item-settings" id="item-settings">
                     <a href="#" class="nav-link">
                         <span>
                             <svg class="svg bi bi-gear" id="Layer_1" data-name="Layer 1"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@
                             </svg>
                         </span>
                     </a>
-                </li>
+                </li>-->
             </ul>
 
 
@@ -89,7 +89,11 @@
               </svg>
             </button>
 
-
-
-            
+            <!--search modal-->
+            <div id="myOverlay" class="overlay">
+              <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+              <div class="overlay-content">
+                  <input id="search" type="text" name="search" value="" class="input-text form-control" maxlength="128" placeholder="Search..." role="combobox" aria-expanded="true" aria-haspopup="false" aria-autocomplete="both" autocomplete="off">
+              </div>
+            </div>
 </header>

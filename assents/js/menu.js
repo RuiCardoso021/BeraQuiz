@@ -20,7 +20,7 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
+/* 
 var ItemHome = $("#item-home").attr("id");
 var ItemSearch = $("#item-search").attr("id");
 var ItemProfile = $("#item-profile").attr("id");
@@ -52,7 +52,7 @@ $(document).ready(function () {
 });
 
 
-// Active menu
+Active menu
 $(document).ready(function () {
   $('#item-home').click(function () {
     if($("#item-home").hasClass('active-nav')){
@@ -63,14 +63,26 @@ $(document).ready(function () {
     }
   });
 });
+*/
 
 
 //search menu
 $(document).ready(function(){
-  $("#myInput").on("keyup", function() {
+  $("#searchput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $(".movie-quiz").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
   });
 });
+
+//open or close modal search
+$(document).on('click', '#item-search',function(){
+  $('#myOverlay').toggle();
+  $( "html" ).toggleClass( "search-open" );
+});
+//close modal search
+function closeSearch() {
+  $('#myOverlay').toggle();
+  $( "html" ).toggleClass( "search-open" );
+}

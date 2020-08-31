@@ -3,7 +3,7 @@
   <script src="assents/js/main-menu.js" async defer></script>   
 
    <div class="col-md-12 col-lg-12 col-xl-3 menu-lateral-mobile paddingdomenu">
-        <div class="container-fluid main-menu-mother main-body" style="padding-top:30px;">
+        <div class="container-fluid main-menu-mother main-body" style="padding-top:30px; min-height:1000px;">
         <div class="row">
         <a type="button" class="close-modal close-main-menu">
             <span aria-hidden="true">×</span>

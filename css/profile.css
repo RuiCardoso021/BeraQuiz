@@ -398,7 +398,7 @@ input {
   }
   @media only screen and (max-width: 300px) {.padding-body{padding: 0 3px} .cont, button{border-radius: 20px!important;} .form {padding: 50px 5px 0;}}
 
-  
+  .container-menu{max-width: 1400px;}
 
 
 

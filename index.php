@@ -9,8 +9,6 @@
     }else{
         echo $_SESSION["user"];
     }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +30,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     
     <div class="container-fluid body-index">
-        <div class="row">
+        <div class="row row-bug">
 
                 <!--MAIN-MENMU-->
                 <?php   include "assents/main-menu.php";    ?>

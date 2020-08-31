@@ -6,7 +6,7 @@
 
 #navbarSupportedContent a{
     color: #fff;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif!important;
 }
 
 #navbarSupportedContent .dropdown-menu a{
@@ -86,7 +86,7 @@
         -webkit-padding-start: 0;
     }
     .mobile-footer>li {
-        width: 25%;
+        width: 50%;
         float: left;
         margin-bottom: 0;
         padding-bottom: 10px;
@@ -292,3 +292,107 @@ ul .nav-link{font-size: 15px!important;}
 
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 99999999999999999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: #fff;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .overlay .closebtn:hover {
+    color: rgb(61, 61, 61);
+  }
+  
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+  }
+  
+
+.overlay-content::before{
+    width: 24px;
+    height: 30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 12%;
+    content: "";
+    background-image: url("data:image/svg+xml, %3Csvg class='svg bi bi-search' id='Layer_1' data-name='Layer 1' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z' clip-rule='evenodd'/%3E%3Cpath fill-rule='evenodd' d='M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z' clip-rule='evenodd'/%3E%3C/svg%3E ");
+}
+.overlay-content input[type=text]{
+    background: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    padding-left: 80px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.overlay-content input[type=text]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    color: rgb(46, 46, 46);
+    opacity: 1; /* Firefox */
+  }
+  
+  .overlay-content input[type=text]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    color: rgb(46, 46, 46);
+  }
+  
+  .overlay-content input[type=text]::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    color: rgb(46, 46, 46);
+  }
+
+  .form-control:focus {
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.25)!important;
+}
+
+.search-open body{overflow-y: hidden;}
+
+@media only screen and (max-width: 970px) {
+
+    .overlay-content{width: 100%; padding: 0 15px;}
+    .overlay-content input[type=text]{width: 100%; font-size: 16px;padding-left:60px}
+    .overlay-content::before {width: 18px;
+        height: 26px;
+        left: 32px;}
+    
+    .overlay-content input[type=text]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */    font-size: 16px;}
+    .overlay-content input[type=text]:-ms-input-placeholder { /* Internet Explorer 10-11 */ font-size: 16px;}
+    .overlay-content input[type=text]::-ms-input-placeholder { /* Microsoft Edge */ font-size: 16;}
+
+}
